@@ -1,0 +1,6 @@
+# VSCode
+.vscode
+Properties
+# Csharp output folders
+obj
+bin

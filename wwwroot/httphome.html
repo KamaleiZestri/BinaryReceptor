@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Receptor</title>
+    <!-- <link rel="stylesheet" href="test.css"> -->
+</head>
+<body>
+    <p>0. Download <a href="https://github.com/markusfisch/BinaryEye">Binary Eye.</a></p>
+    <p>1. 3 dots -> "Preferences" -> "Forwarding" heading -> Turn "Forward scans" on.</p>
+    <p>2. "Request type" should be "GET and simply add content".</p>
+    <p>3. "URL to forward to" should be the content of the QRcode below.</p>
+    <br>
+    <p id="ipaddress">iptemp</p>
+    <canvas id="ipqr"></canvas>
+    
+    <script src="qrious.js"></script>
+    <script>
+        init();
+        async function init()
+        {
+            const res = await fetch("ServerData.json");
+            const data = await res.json();
+
+            const ip = document.getElementById("ipaddress");
+            //ip.textContent = data;
+            ip.textContent = data.IPAddress;
+
+            var qr = new QRious(
+            {
+                element: ipqr,
+                size: 400, 
+                value: data + "/recept/?content="
+            }); 
+    }
+    </script>
+</body>
+</html>
