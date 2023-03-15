@@ -1,7 +1,9 @@
 # Binary Receptor
 *Only for Windows, due to C# Bluetooth API limitations.*
 
-Works with [BinaryEye](https://github.com/markusfisch/BinaryEye) to recieve scans and output them as keypresses. Utilizes either bluetooth or http. 
+Works with [BinaryEye](https://github.com/markusfisch/BinaryEye) to recieve scans and output them as keypresses. Utilizes either bluetooth or http.
+
+For a windows tray version, see [here](https://github.com/KamaleiZestri/BinaryReceptorWindows)
 
 ## Usage
 1. Navigate to the folder with BinaryReceptor.exe.
