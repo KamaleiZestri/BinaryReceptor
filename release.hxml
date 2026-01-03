@@ -1,0 +1,9 @@
+-cp cmd/src
+-main Main
+
+-D ABI=-MD
+-D WXSTATIC
+-D HXCPP_M64
+-D HAXE_OUTPUT_FILE=BinaryReceptor
+
+-cpp cmd/release

@@ -1,0 +1,18 @@
+-cp cmd/src
+-main Main
+
+--debug
+
+
+-D ABI=-MD
+-D WXSTATIC
+-D HXCPP_M64
+-lib hxcpp-debug-server
+# -lib hxBluetooth
+# haxelib git hxBluetooth https://github.com/KamaleiZestri/hxBluetooth
+# -lib hxKeyType
+# haxelib git hxKeyType https://github.com/KamaleiZestri/hxKeyType
+# -D #pragma comment(lib, "Bthprops.lib")
+# -D #pragma comment(lib, "Ws2_32.lib")
+
+-cpp cmd/build
