@@ -1,9 +1,12 @@
--cp cmd/src
+-cp src
 -main Main
+
+-lib hxBluetooth
+-lib hxKeyType
 
 -D ABI=-MD
 -D WXSTATIC
 -D HXCPP_M64
 -D HAXE_OUTPUT_FILE=BinaryReceptor
 
--cpp cmd/release
+-cpp build/release

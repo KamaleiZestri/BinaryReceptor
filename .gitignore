@@ -1,6 +1,5 @@
-# VSCode
-.vscode
-Properties
-# Csharp output folders
+# Build & Output folders
+build
 obj
 bin
+BinaryReceptor.zip

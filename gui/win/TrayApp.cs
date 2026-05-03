@@ -13,12 +13,12 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Configuration;
 
-namespace BinaryReceptorWinGui;
+namespace BinRecTray;
 
 public class TrayApp : ApplicationContext
 {
-    private const string BINARYRECEPTORNAME = "BinaryReceptor";
-    private Stream iconResource;
+    private const string TrayIconResource = "BinaryReceptorGUI.icon.ico";
+    private string ProgName;
     private string mode = "bluetooth";
     private NotifyIcon trayIcon;
     private ToolStripMenuItem menuItemMode;
@@ -27,12 +27,11 @@ public class TrayApp : ApplicationContext
     private ToolStripMenuItem menuItemStop;
     private ToolStripMenuItem menuItemExit;
     
-    public TrayApp()
+    public TrayApp(string progname)
     {
-        var assembly = typeof(TrayApp).GetTypeInfo().Assembly;
-        iconResource = assembly.GetManifestResourceStream("BinaryReceptorWinGui.icon.ico");
-
+        this.ProgName = progname;
         CreateTrayIcon();
+        Start(null,null);
     }
 
     private void CreateTrayIcon()
@@ -52,13 +51,14 @@ public class TrayApp : ApplicationContext
         contextMenu.Items.Add(menuItemExit);
 
         contextMenu.Opening += new CancelEventHandler(ContextMenuOnPopup);
-
+        
+        using var iconStream = Assembly.GetExecutingAssembly().GetManifestResourceStream(TrayIconResource);
         trayIcon = new NotifyIcon() 
         {
-            Icon = new Icon(iconResource), 
+            Icon = new Icon(iconStream), 
             ContextMenuStrip = contextMenu, 
             Visible = true, 
-            Text = BINARYRECEPTORNAME
+            Text = ProgName
         };
     }
     private void Switch(object sender, EventArgs e)
@@ -76,7 +76,7 @@ public class TrayApp : ApplicationContext
             modeString = "--mode http";
 
         Process p = new Process();
-        p.StartInfo.FileName = String.Concat(BINARYRECEPTORNAME,".exe");
+        p.StartInfo.FileName = String.Concat(ProgName,".exe");
         p.StartInfo.CreateNoWindow = true;
         p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
         p.StartInfo.WorkingDirectory = Application.StartupPath;
@@ -85,7 +85,7 @@ public class TrayApp : ApplicationContext
     }
     private void Stop(object sender, EventArgs e)
     {
-        Process? process = Process.GetProcessesByName(BINARYRECEPTORNAME).FirstOrDefault();
+        Process? process = Process.GetProcessesByName(ProgName).FirstOrDefault();
         if (process == null)
             return;
 
@@ -100,7 +100,7 @@ public class TrayApp : ApplicationContext
     }
     private void ContextMenuOnPopup(object sender, EventArgs e)
     {
-        bool exeRunning = Process.GetProcessesByName(BINARYRECEPTORNAME).Length > 0;
+        bool exeRunning = Process.GetProcessesByName(ProgName).Length > 0;
         bool running = exeRunning;
         bool stopped = !exeRunning;
 

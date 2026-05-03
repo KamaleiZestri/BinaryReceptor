@@ -1,7 +1,4 @@
-using System;
-using System.Windows.Forms;
-
-namespace BinaryReceptorWinGui;
+namespace BinRecTray;
 
 static class Program
 {
@@ -11,9 +8,7 @@ static class Program
     [STAThread]
     static void Main()
     {
-        Application.EnableVisualStyles();
-        Application.SetCompatibleTextRenderingDefault(false);
-
-        Application.Run(new TrayApp());
+        ApplicationConfiguration.Initialize();
+        Application.Run(new TrayApp("BinaryReceptor"));
     }    
 }
