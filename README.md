@@ -1,41 +1,1 @@
-# BinaryReceptor 3.0.0
-
-BinaryReceptor is a lightweight Windows desktop receiver for barcode scans forwarded by [BinaryEye](https://github.com/markusfisch/BinaryEye). It receives HTTP GET and POST scans, displays an activity log, and can output scans as Unicode keystrokes.
-
-## Compatibility
-
-BinaryEye's current README documents LAN HTTP forwarding and HTTPS callbacks for continuous scanning. The callback sends one JSON POST per scan with fields such as `content`, hexadecimal `raw`, `format`, `scanId`, `timestamp`, and optional barcode metadata. BinaryReceptor accepts these fields, form-urlencoded requests, query parameters, and raw text bodies on `/` and `/scan`. Retries with the same payload are suppressed during the configured deduplication window. The current BinaryEye documentation does not describe WebSocket forwarding.
-
-The checked-in Python port did not contain the legacy `hxBluetooth` or `hxKeyType` implementations. Bluetooth SDP/RFCOMM registration therefore remains unavailable in this port. `bluetooth` mode reports this clearly; `both` currently runs the supported HTTP listener. No claim is made that Bluetooth is active. HTTP is the default.
-
-## Run from source
-
-Requires Python 3.11+ on Windows.
-
-```powershell
-py -3.12 -m pip install -r requirements-build.txt
-py -3.12 -m binaryreceptor.app
-```
-
-In BinaryEye, enable scan forwarding and set the displayed LAN URL as the destination. Select JSON POST for complete format and metadata fields. Windows Firewall may ask to allow the listener on a private network.
-
-## Configuration
-
-Edit `settings.ini` next to `BinaryReceptor.exe`. Source runs use the repository root. The path is resolved independently of the current working directory and PyInstaller's extraction folder. Existing settings are loaded on startup, external file edits are polled while the app is open, and the reload button applies manual changes. Network settings restart the active listener when changed from disk.
-
-`mode` supports `http`, `bluetooth`, or `both`; `host` supports an explicit address or `0.0.0.0`; `port` is 1024â€“65535; and `dedup_window_ms` is 0â€“10000. Output options include `type`, `paste`, `copy`, and `log`, plus configurable prefix/suffix tokens, typing delays, simple case transformation, regex replacement, symbology filtering, and optional CSV logging. Review the comments and defaults in `settings.ini` before changing network exposure.
-
-Prefix/suffix strings accept `{ENTER}`, `{TAB}`, `{SPACE}`, `{BACKSPACE}`, `{ESC}`, and `{DELAY:100}` tokens. For example: `prefix = {ENTER}`. Plain text is emitted with Win32 Unicode `SendInput`.
-
-## Build
-
-```powershell
-py -3.12 -m pip install -r requirements-build.txt
-py -3.12 build.py
-```
-
-Or run `build.bat`. The one-file, no-console executable and editable `settings.ini` are written to `dist/`. GitHub Actions builds on pull requests and creates the `BinaryReceptor-v3.0.0-win64.zip` release asset when tag `v3.0.0` is pushed.
-
-## License
-
-See the repository history and upstream project for licensing details.
+YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éí×^4N‹Z–‹­¦ëeŠw¬ÔŒ	¥¹…ÉåI••ÁÑ½È€Ì¸À¸À()	¥¹…ÉåI••ÁÑ½È¥Ì„±¥¡Ñİ•¥¡Ğ]¥¹‘½İÌ‘•Í­Ñ½ÀÉ••¥Ù•È™½È‰…É½‘”Í…¹Ì™½Éİ…É‘•‰äm	¥¹…Éåå•t¡¡ÑÑÁÌè¼½¥Ñ¡Õˆ¹½´½µ…É­ÕÍ™¥Í ½	¥¹…Éåå”¤¸%ĞÉ••¥Ù•Ì!QQ@P…¹A=MPÍ…¹Ì°‘¥ÍÁ±…åÌ…¸…Ñ¥Ù¥Ñä±½œ°…¹…¸½ÕÑÁÕĞÍ…¹Ì…ÌU¹¥½‘”­•åÍÑÉ½­•Ì¸((ŒŒ½µÁ…Ñ¥‰¥±¥Ñä()	¥¹…Éåå”ÌÕÉÉ•¹ĞI5‘½Õµ•¹ÑÌ18!QQ@™½Éİ…É‘¥¹œ…¹!QQAL…±±‰…­Ì™½È½¹Ñ¥¹Õ½ÕÌÍ…¹¹¥¹œ¸Q¡”…±±‰…¬Í•¹‘Ì½¹”)M=8A=MPÁ•ÈÍ…¸İ¥Ñ ™¥•±‘ÌÍÕ …Ì½¹Ñ•¹Ñ€°¡•á…‘•¥µ…°É…İ€°™½Éµ…Ñ€°Í…¹%‘€°Ñ¥µ•ÍÑ…µÁ€°…¹½ÁÑ¥½¹…°‰…É½‘”µ•Ñ…‘…Ñ„¸	¥¹…ÉåI••ÁÑ½È…•ÁÑÌÑ¡•Í”™¥•±‘Ì°™½É´µÕÉ±•¹½‘•É•ÅÕ•ÍÑÌ°ÅÕ•ÉäÁ…É…µ•Ñ•ÉÌ°…¹É…ÜÑ•áĞ‰½‘¥•Ì½¸€½€…¹€½Í…¹€¸I•ÑÉ¥•Ìİ¥Ñ Ñ¡”Í…µ”Á…å±½……É”ÍÕÁÁÉ•ÍÍ•‘ÕÉ¥¹œÑ¡”½¹™¥ÕÉ•‘•‘ÕÁ±¥…Ñ¥½¸İ¥¹‘½Ü¸Q¡”ÕÉÉ•¹Ğ	¥¹…Éåå”‘½Õµ•¹Ñ…Ñ¥½¸‘½•Ì¹½Ğ‘•ÍÉ¥‰”]•‰M½­•Ğ™½Éİ…É‘¥¹œ¸()Q¡”½É¥¥¹…°!…á”ÁÉ½©•ĞÉ•™•É•¹•ÌÑ¡”•áÑ•É¹…°m¡á	±Õ•Ñ½½Ñ¡t¡¡ÑÑÁÌè¼½¥Ñ¡Õˆ¹½´½-…µ…±•¥i•ÍÑÉ¤½¡á	±Õ•Ñ½½Ñ ¤…¹m¡á-•åQåÁ•t¡¡ÑÑÁÌè¼½¥Ñ¡Õˆ¹½´½-…µ…±•¥i•ÍÑÉ¤½¡á-•åQåÁ”¤±¥‰É…É¥•ÌìÑ¡”AåÑ¡½¸Á½ÉĞ‘¥¹½ĞÙ•¹‘½ÈÑ¡•´¸Q¡”¡¥ÍÑ½É¥…°	±Õ•Ñ½½Ñ Í•ÑÕÀ¥¸mÍÉŒ½5…¥¸¹¡át¡¡ÑÑÁÌè¼½¥Ñ¡Õˆ¹½´½½Õ¹½µµ½¹¼½	¥¹…ÉåI••ÁÑ½È½‰±½ˆ½µ…¥¸½ÍÉŒ½5…¥¸¹¡à¤ÕÍ•Ì„UU%‘¥™™•É•¹Ğ™É½´	¥¹…Éåå”Ì‘½Õµ•¹Ñ•UU%°…¹Ñ¡”±•…ä	±Õ•Ñ½½Ñ É••¥Ù”½‘”¡…Ì‰Õ™™•Èµ¡…¹‘±¥¹œÁÉ½‰±•µÌ¸	±Õ•Ñ½½Ñ M@½I=54É•¥ÍÑÉ…Ñ¥½¸¥ÌÑ¡•É•™½É”Õ¹…Ù…¥±…‰±”¥¸Ñ¡¥ÌÁ½ÉĞÕ¹Ñ¥°¥Ğ…¸‰”Á½ÉÑ•…¹Ù…±¥‘…Ñ•……¥¹ÍĞ]¥¹‘½İÌ	±Õ•Ñ½½Ñ ¡…É‘İ…É”¸‰±Õ•Ñ½½Ñ¡€µ½‘”É•Á½ÉÑÌÑ¡¥Ì±•…É±äì‰½Ñ¡€ÕÉÉ•¹Ñ±äÉÕ»^4¶‰ËkºwµçI¬¸((ŒŒ½¹™¥ÕÉ…Ñ¥½¸()‘¥ĞÍ•ÑÑ¥¹Ì¹¥¹¥€¹•áĞÑ¼	¥¹…ÉåI••ÁÑ½È¹•á•€¸M½ÕÉ”ÉÕ¹ÌÕÍ”Ñ¡”É•Á½Í¥Ñ½ÉäÉ½½Ğ¸Q¡”Á…Ñ ¥ÌÉ•Í½±Ù•¥¹‘•Á•¹‘•¹Ñ±ä½˜Ñ¡”ÕÉÉ•¹Ğİ½É­¥¹œ‘¥É•Ñ½Éä…¹Aå%¹ÍÑ…±±•ÈÌ•áÑÉ…Ñ¥½¸™½±‘•È¸á¥ÍÑ¥¹œÍ•ÑÑ¥¹Ì…É”±½…‘•½¸ÍÑ…ÉÑÕÀ°•áÑ•É¹…°™¥±”•‘¥ÑÌ…É”Á½±±•İ¡¥±”Ñ¡”…ÁÀ¥Ì½Á•¸°…¹Ñ¡”É•±½…‰ÕÑÑ½¸…ÁÁ±¥•Ìµ…¹Õ…°¡…¹•Ì¸9•Ñİ½É¬Í•ÑÑ¥¹ÌÉ•ÍÑ…ÉĞÑ¡”…Ñ¥Ù”±¥ÍÑ•¹•Èİ¡•¸¡…¹•™É½´‘¥Í¬¸()µ½‘•€ÍÕÁÁ½ÉÑÌ¡ÑÑÁ€°‰±Õ•Ñ½½Ñ¡€°½È‰½Ñ¡€ì¡½ÍÑ€ÍÕÁÁ½ÉÑÌ…¸•áÁ±¥¥Ğ…‘‘É•ÍÌ½È€À¸À¸À¸Á€ìÁ½ÉÑ€¥Ì€ÄÀÈÓŠLØÔÔÌÔì…¹‘•‘ÕÁ}İ¥¹‘½İ}µÍ€¥Ì€ÃŠLÄÀÀÀÀ¸=ÕÑÁÕĞ½ÁÑ¥½¹Ì¥¹±Õ‘”ÑåÁ•€°Á…ÍÑ•€°½Áå€°…¹±½€°Á±ÕÌ½¹™¥ÕÉ…‰±”ÁÉ•™¥à½ÍÕ™™¥àÑ½­•¹Ì°ÑåÁ¥¹œ‘•±…åÌ°Í¥µÁ±”…Í”ÑÉ…¹Í™½Éµ…Ñ¥½¸°É••àÉ•Á±…•µ•¹Ğ°Íåµ‰½±½ä™¥±Ñ•É¥¹œ°…¹½ÁÑ¥½¹…°MX±½¥¹œ¸I•Ù¥•ÜÑ¡”½µµ•¹ÑÌ…¹‘•™…Õ±ÑÌ¥¸Í•ÑÑ¥¹Ì¹¥¹¥€‰•™½É”¡…¹¥¹œ¹•Ñİ½É¬•áÁ½ÍÕÉ”¸()AÉ•™¥à½ÍÕ™™¥àÍÑÉ¥¹Ì…•ÁĞí9QIõ€°íQ	õ€°íMAõ€°í	-MAõ€°íMõ€°…¹í1dèÄÀÁõ€Ñ½­•¹Ì¸½È•á…µÁ±”èÁÉ•™¥à€ôí9QIõ€¸A±…¥¸Ñ•áĞ¥Ì•µ¥ÑÑ•İ¥Ñ ]¥¸ÌÈU¹¥½‘”M•¹‘%¹ÁÕÑ€¸((ŒŒ	Õ¥±()Á½İ•ÉÍ¡•±°)Áä€´Ì¸ÄÈ€µ´Á¥À¥¹ÍÑ…±°€µÈÉ•ÅÕ¥É•µ•¹ÑÌµ‰Õ¥±¹ÑáĞ)Áä€´Ì¸ÄÈ‰Õ¥±¹Áä)€()=ÈÉÕ¸‰Õ¥±¹‰…Ñ€¸Q¡”½¹”µ™¥±”°¹¼µ½¹Í½±”•á•ÕÑ…‰±”…¹•‘¥Ñ…‰±”Í•ÑÑ¥¹Ì¹¥¹¥€…É”İÉ¥ÑÑ•¸Ñ¼‘¥ÍĞ½€¸¥Ñ!ÕˆÑ¥½¹Ì‰Õ¥±‘Ì½¸ÁÕ±°É•ÅÕ•ÍÑÌ…¹É•…Ñ•ÌÑ¡”	¥¹…ÉåI••ÁÑ½ÈµØÌ¸À¸Àµİ¥¸ØĞ¹é¥Á€É•±•…Í”…ÍÍ•Ğİ¡•¸Ñ…œØÌ¸À¸Á€¥ÌÁÕÍ¡•¸((ŒŒ1¥•¹Í”()M•”Ñ¡”É•Á½Í¥Ñ½Éä¡¥ÍÑ½Éä…¹ÕÁÍÑÉ•…´ÁÉ½©•Ğ™½È±¥•¹Í¥¹œ‘•Ñ…¥±Ì¸(
