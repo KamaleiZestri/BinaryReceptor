@@ -1,45 +1,41 @@
-# Binary Receptor
-*Only for Windows, for now.*
+# BinaryReceptor 3.0.0
 
-Works with [BinaryEye](https://github.com/markusfisch/BinaryEye) to recieve scans and output them as keypresses. Utilizes either bluetooth or http.
+BinaryReceptor is a lightweight Windows desktop receiver for barcode scans forwarded by [BinaryEye](https://github.com/markusfisch/BinaryEye). It receives HTTP GET and POST scans, displays an activity log, and can output scans as Unicode keystrokes.
 
+## Compatibility
 
-## Usage
+BinaryEye's current README documents LAN HTTP forwarding and HTTPS callbacks for continuous scanning. The callback sends one JSON POST per scan with fields such as `content`, hexadecimal `raw`, `format`, `scanId`, `timestamp`, and optional barcode metadata. BinaryReceptor accepts these fields, form-urlencoded requests, query parameters, and raw text bodies on `/` and `/scan`. Retries with the same payload are suppressed during the configured deduplication window. The current BinaryEye documentation does not describe WebSocket forwarding.
 
-### On Computer
-1. Navigate to the folder with BinaryReceptorGUI.exe.
-2. Double click to run it with settings in `settings.ini` or open CMD for options.
-3. Or use `BinaryReceptor.exe` for the cmd version. The following options exist:
+The checked-in Python port did not contain the legacy `hxBluetooth` or `hxKeyType` implementations. Bluetooth SDP/RFCOMM registration therefore remains unavailable in this port. `bluetooth` mode reports this clearly; `both` currently runs the supported HTTP listener. No claim is made that Bluetooth is active. HTTP is the default.
 
-```start BinaryReceptor.exe [bluetooth|http] [port]```
-Parameters | Description
----|---
-bluetooth | Default launch mode. Reccomended. Recieves BinaryEye scans via bluetooth.
-http | Recieves BinaryEye scans via http. Not reccomended due to vulnerability of exposing keyboard input to http.
-port | Optional. Changes the default port number from ```24234```
+## Run from source
 
-### On BinaryEye
-1. `Settings` -> `Forwarding` section.
-2. If Bluetooth:
-    - Enable `Forward scans with Bluetooth`
-    - Connect your device with BinaryEye to your device with BinaryReceptor via bluetooth.
-    - Set `Host` to your your device with BinaryReceptor.
+Requires Python 3.11+ on Windows.
 
-3. If HTTP: 
-    - Enable `Forward Scans`.
-    - Set `Request Type` to `GET and simply add content`
-    - Add your current ip to `URL to forward to`
+```powershell
+py -3.12 -m pip install -r requirements-build.txt
+py -3.12 -m binaryreceptor.app
+```
 
+In BinaryEye, enable scan forwarding and set the displayed LAN URL as the destination. Select JSON POST for complete format and metadata fields. Windows Firewall may ask to allow the listener on a private network.
 
-## Build Steps
-1. Download requirements:
-  - [Haxe](https://haxe.org)
-  - [Dotnet compiler](https://dotnet.microsoft.com/en-us/download)
-  - [Just](https://github.com/casey/just) (optional)
+## Configuration
 
-2. Download Haxe dependencies for this project with the following commands:
-    - `haxelib install hxcpp 4.3.2` 
-    - `haxelib git hxBluetooth https://github.com/KamaleiZestri/hxBluetooth`
-    - `haxelib git hxKeyType https://github.com/KamaleiZestri/hxKeyType`
+Edit `settings.ini` next to `BinaryReceptor.exe`. Source runs use the repository root. The path is resolved independently of the current working directory and PyInstaller's extraction folder. Existing settings are loaded on startup, external file edits are polled while the app is open, and the reload button applies manual changes. Network settings restart the active listener when changed from disk.
 
-3. If using just, then run `just fullrelease`. Otherwise, read `justfile`. Its simple.
+`mode` supports `http`, `bluetooth`, or `both`; `host` supports an explicit address or `0.0.0.0`; `port` is 1024–65535; and `dedup_window_ms` is 0–10000. Output options include `type`, `paste`, `copy`, and `log`, plus configurable prefix/suffix tokens, typing delays, simple case transformation, regex replacement, symbology filtering, and optional CSV logging. Review the comments and defaults in `settings.ini` before changing network exposure.
+
+Prefix/suffix strings accept `{ENTER}`, `{TAB}`, `{SPACE}`, `{BACKSPACE}`, `{ESC}`, and `{DELAY:100}` tokens. For example: `prefix = {ENTER}`. Plain text is emitted with Win32 Unicode `SendInput`.
+
+## Build
+
+```powershell
+py -3.12 -m pip install -r requirements-build.txt
+py -3.12 build.py
+```
+
+Or run `build.bat`. The one-file, no-console executable and editable `settings.ini` are written to `dist/`. GitHub Actions builds on pull requests and creates the `BinaryReceptor-v3.0.0-win64.zip` release asset when tag `v3.0.0` is pushed.
+
+## License
+
+See the repository history and upstream project for licensing details.
