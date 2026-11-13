@@ -1,6 +1,20 @@
 @echo off
 setlocal
-py -3.12 -m pip install -r requirements-build.txt
-if errorlevel 1 exit /b %errorlevel%
-py -3.12 build.py
-exit /b %errorlevel%
+cd /d "%~dp0"
+
+echo ===================================================
+echo  BinaryReceptor v3.0.0 - Standalone Windows Build
+echo ===================================================
+
+python build.py
+
+if %ERRORLEVEL% NEQ 0 (
+    echo.
+    echo [ERROR] Build failed with exit code %ERRORLEVEL%
+    pause
+    exit /b %ERRORLEVEL%
+)
+
+echo.
+echo [DONE] BinaryReceptor.exe is ready in the dist/ folder!
+pause

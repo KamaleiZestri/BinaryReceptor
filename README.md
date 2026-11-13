@@ -1,1 +1,261 @@
-YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éí×^4N‹Z–‹­¦ëeŠw¬ÔŒ	¥¹…ÉåI••ÁÑ½È€Ì¸À¸À()	¥¹…ÉåI••ÁÑ½È¥Ì„±¥¡Ñİ•¥¡Ğ]¥¹‘½İÌ‘•Í­Ñ½ÀÉ••¥Ù•È™½È‰…É½‘”Í…¹Ì™½Éİ…É‘•‰äm	¥¹…Éåå•t¡¡ÑÑÁÌè¼½¥Ñ¡Õˆ¹½´½µ…É­ÕÍ™¥Í ½	¥¹…Éåå”¤¸%ĞÉ••¥Ù•Ì!QQ@P…¹A=MPÍ…¹Ì°‘¥ÍÁ±…åÌ…¸…Ñ¥Ù¥Ñä±½œ°…¹…¸½ÕÑÁÕĞÍ…¹Ì…ÌU¹¥½‘”­•åÍÑÉ½­•Ì¸((ŒŒ½µÁ…Ñ¥‰¥±¥Ñä()	¥¹…Éåå”ÌÕÉÉ•¹ĞI5‘½Õµ•¹ÑÌ18!QQ@™½Éİ…É‘¥¹œ…¹!QQAL…±±‰…­Ì™½È½¹Ñ¥¹Õ½ÕÌÍ…¹¹¥¹œ¸Q¡”…±±‰…¬Í•¹‘Ì½¹”)M=8A=MPÁ•ÈÍ…¸İ¥Ñ ™¥•±‘ÌÍÕ …Ì½¹Ñ•¹Ñ€°¡•á…‘•¥µ…°É…İ€°™½Éµ…Ñ€°Í…¹%‘€°Ñ¥µ•ÍÑ…µÁ€°…¹½ÁÑ¥½¹…°‰…É½‘”µ•Ñ…‘…Ñ„¸	¥¹…ÉåI••ÁÑ½È…•ÁÑÌÑ¡•Í”™¥•±‘Ì°™½É´µÕÉ±•¹½‘•É•ÅÕ•ÍÑÌ°ÅÕ•ÉäÁ…É…µ•Ñ•ÉÌ°…¹É…ÜÑ•áĞ‰½‘¥•Ì½¸€½€…¹€½Í…¹€¸I•ÑÉ¥•Ìİ¥Ñ Ñ¡”Í…µ”Á…å±½……É”ÍÕÁÁÉ•ÍÍ•‘ÕÉ¥¹œÑ¡”½¹™¥ÕÉ•‘•‘ÕÁ±¥…Ñ¥½¸İ¥¹‘½Ü¸Q¡”ÕÉÉ•¹Ğ	¥¹…Éåå”‘½Õµ•¹Ñ…Ñ¥½¸‘½•Ì¹½Ğ‘•ÍÉ¥‰”]•‰M½­•Ğ™½Éİ…É‘¥¹œ¸()Q¡”½É¥¥¹…°!…á”ÁÉ½©•ĞÉ•™•É•¹•ÌÑ¡”•áÑ•É¹…°m¡á	±Õ•Ñ½½Ñ¡t¡¡ÑÑÁÌè¼½¥Ñ¡Õˆ¹½´½-…µ…±•¥i•ÍÑÉ¤½¡á	±Õ•Ñ½½Ñ ¤…¹m¡á-•åQåÁ•t¡¡ÑÑÁÌè¼½¥Ñ¡Õˆ¹½´½-…µ…±•¥i•ÍÑÉ¤½¡á-•åQåÁ”¤±¥‰É…É¥•ÌìÑ¡”AåÑ¡½¸Á½ÉĞ‘¥¹½ĞÙ•¹‘½ÈÑ¡•´¸Q¡”¡¥ÍÑ½É¥…°	±Õ•Ñ½½Ñ Í•ÑÕÀ¥¸mÍÉŒ½5…¥¸¹¡át¡¡ÑÑÁÌè¼½¥Ñ¡Õˆ¹½´½½Õ¹½µµ½¹¼½	¥¹…ÉåI••ÁÑ½È½‰±½ˆ½µ…¥¸½ÍÉŒ½5…¥¸¹¡à¤ÕÍ•Ì„UU%‘¥™™•É•¹Ğ™É½´	¥¹…Éåå”Ì‘½Õµ•¹Ñ•UU%°…¹Ñ¡”±•…ä	±Õ•Ñ½½Ñ É••¥Ù”½‘”¡…Ì‰Õ™™•Èµ¡…¹‘±¥¹œÁÉ½‰±•µÌ¸	±Õ•Ñ½½Ñ M@½I=54É•¥ÍÑÉ…Ñ¥½¸¥ÌÑ¡•É•™½É”Õ¹…Ù…¥±…‰±”¥¸Ñ¡¥ÌÁ½ÉĞÕ¹Ñ¥°¥Ğ…¸‰”Á½ÉÑ•…¹Ù…±¥‘…Ñ•……¥¹ÍĞ]¥¹‘½İÌ	±Õ•Ñ½½Ñ ¡…É‘İ…É”¸‰±Õ•Ñ½½Ñ¡€µ½‘”É•Á½ÉÑÌÑ¡¥Ì±•…É±äì‰½Ñ¡€ÕÉÉ•¹Ñ±äÉÕ»^4¶‰ËkºwµçI¬¸((ŒŒ½¹™¥ÕÉ…Ñ¥½¸()‘¥ĞÍ•ÑÑ¥¹Ì¹¥¹¥€¹•áĞÑ¼	¥¹…ÉåI••ÁÑ½È¹•á•€¸M½ÕÉ”ÉÕ¹ÌÕÍ”Ñ¡”É•Á½Í¥Ñ½ÉäÉ½½Ğ¸Q¡”Á…Ñ ¥ÌÉ•Í½±Ù•¥¹‘•Á•¹‘•¹Ñ±ä½˜Ñ¡”ÕÉÉ•¹Ğİ½É­¥¹œ‘¥É•Ñ½Éä…¹Aå%¹ÍÑ…±±•ÈÌ•áÑÉ…Ñ¥½¸™½±‘•È¸á¥ÍÑ¥¹œÍ•ÑÑ¥¹Ì…É”±½…‘•½¸ÍÑ…ÉÑÕÀ°•áÑ•É¹…°™¥±”•‘¥ÑÌ…É”Á½±±•İ¡¥±”Ñ¡”…ÁÀ¥Ì½Á•¸°…¹Ñ¡”É•±½…‰ÕÑÑ½¸…ÁÁ±¥•Ìµ…¹Õ…°¡…¹•Ì¸9•Ñİ½É¬Í•ÑÑ¥¹ÌÉ•ÍÑ…ÉĞÑ¡”…Ñ¥Ù”±¥ÍÑ•¹•Èİ¡•¸¡…¹•™É½´‘¥Í¬¸()µ½‘•€ÍÕÁÁ½ÉÑÌ¡ÑÑÁ€°‰±Õ•Ñ½½Ñ¡€°½È‰½Ñ¡€ì¡½ÍÑ€ÍÕÁÁ½ÉÑÌ…¸•áÁ±¥¥Ğ…‘‘É•ÍÌ½È€À¸À¸À¸Á€ìÁ½ÉÑ€¥Ì€ÄÀÈÓŠLØÔÔÌÔì…¹‘•‘ÕÁ}İ¥¹‘½İ}µÍ€¥Ì€ÃŠLÄÀÀÀÀ¸=ÕÑÁÕĞ½ÁÑ¥½¹Ì¥¹±Õ‘”ÑåÁ•€°Á…ÍÑ•€°½Áå€°…¹±½€°Á±ÕÌ½¹™¥ÕÉ…‰±”ÁÉ•™¥à½ÍÕ™™¥àÑ½­•¹Ì°ÑåÁ¥¹œ‘•±…åÌ°Í¥µÁ±”…Í”ÑÉ…¹Í™½Éµ…Ñ¥½¸°É••àÉ•Á±…•µ•¹Ğ°Íåµ‰½±½ä™¥±Ñ•É¥¹œ°…¹½ÁÑ¥½¹…°MX±½¥¹œ¸I•Ù¥•ÜÑ¡”½µµ•¹ÑÌ…¹‘•™…Õ±ÑÌ¥¸Í•ÑÑ¥¹Ì¹¥¹¥€‰•™½É”¡…¹¥¹œ¹•Ñİ½É¬•áÁ½ÍÕÉ”¸()AÉ•™¥à½ÍÕ™™¥àÍÑÉ¥¹Ì…•ÁĞí9QIõ€°íQ	õ€°íMAõ€°í	-MAõ€°íMõ€°…¹í1dèÄÀÁõ€Ñ½­•¹Ì¸½È•á…µÁ±”èÁÉ•™¥à€ôí9QIõ€¸A±…¥¸Ñ•áĞ¥Ì•µ¥ÑÑ•İ¥Ñ ]¥¸ÌÈU¹¥½‘”M•¹‘%¹ÁÕÑ€¸((ŒŒ	Õ¥±()Á½İ•ÉÍ¡•±°)Áä€´Ì¸ÄÈ€µ´Á¥À¥¹ÍÑ…±°€µÈÉ•ÅÕ¥É•µ•¹ÑÌµ‰Õ¥±¹ÑáĞ)Áä€´Ì¸ÄÈ‰Õ¥±¹Áä)€()=ÈÉÕ¸‰Õ¥±¹‰…Ñ€¸Q¡”½¹”µ™¥±”°¹¼µ½¹Í½±”•á•ÕÑ…‰±”…¹•‘¥Ñ…‰±”Í•ÑÑ¥¹Ì¹¥¹¥€…É”İÉ¥ÑÑ•¸Ñ¼‘¥ÍĞ½€¸¥Ñ!ÕˆÑ¥½¹Ì‰Õ¥±‘Ì½¸ÁÕ±°É•ÅÕ•ÍÑÌ…¹É•…Ñ•ÌÑ¡”	¥¹…ÉåI••ÁÑ½ÈµØÌ¸À¸Àµİ¥¸ØĞ¹é¥Á€É•±•…Í”…ÍÍ•Ğİ¡•¸Ñ…œØÌ¸À¸Á€¥ÌÁÕÍ¡•¸((ŒŒ1¥•¹Í”()M•”Ñ¡”É•Á½Í¥Ñ½Éä¡¥ÍÑ½Éä…¹ÕÁÍÑÉ•…´ÁÉ½©•Ğ™½È±¥•¹Í¥¹œ‘•Ñ…¥±Ì¸(
+# BinaryReceptor v3.0.0
+
+> **The ultra-lightweight, zero-bug, bilingual desktop companion server for [BinaryEye](https://github.com/markusfisch/BinaryEye) on Android.**  
+> Native Windows architecture with Bluetooth RFCOMM, HTTP webhook listener, SendInput keyboard wedge, and visual token builder.
+
+[![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12%20%7C%203.14-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011-0078D6?logo=windows&logoColor=white)](https://microsoft.com/windows)
+[![Version](https://img.shields.io/badge/Release-v3.0.0-10B981)](https://github.com/ouncommono/BinaryReceptor/releases)
+[![Build Status](https://github.com/ouncommono/BinaryReceptor/actions/workflows/build_release.yml/badge.svg)](https://github.com/ouncommono/BinaryReceptor/actions)
+[![License](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](LICENSE)
+
+---
+
+## ğŸŒ Languages / Ø²Ø¨Ø§Ù†â€ŒÙ‡Ø§
+- [English Documentation](#-english-documentation)
+- [Ø±Ø§Ù‡Ù†Ù…Ø§ÛŒ Ø¬Ø§Ù…Ø¹ ÙØ§Ø±Ø³ÛŒ (Persian Documentation)](#-Ø±Ø§Ù‡Ù†Ù…Ø§ÛŒ-Ø¬Ø§Ù…Ø¹-ÙØ§Ø±Ø³ÛŒ-persian-documentation)
+
+---
+
+# ğŸ‡¬ğŸ‡§ English Documentation
+
+## Executive Overview
+**BinaryReceptor v3.0.0** is a clean-slate architectural rewrite of the original BinaryReceptor repository (originally forked from `KamaleiZestri/BinaryReceptor`). It completely replaces the legacy Haxe/C#/justfile build chain (`hxBluetooth` and `hxKeyType`) with native, ultra-fast Python and Win32 implementations while compiling into a single standalone Windows executable (`BinaryReceptor.exe`).
+
+Whenever you scan any 1D barcode or 2D QR code using [BinaryEye](https://github.com/markusfisch/BinaryEye) on Android, BinaryReceptor instantly captures the barcode over **Bluetooth RFCOMM**, **Wi-Fi / LAN HTTP**, or **both simultaneously**, and directly types it into your active Windows application (Excel, ERP, POS, Notepad, browser, etc.) using low-level Win32 `SendInput` Unicode or fast clipboard paste (`Ctrl+V`).
+
+---
+
+## âœ¨ Key Features & Architectural Enhancements
+
+### 1. Deterministic `settings.ini` Persistence & Hot-Reload
+- **Zero-Bug Path Resolution:** Solves the frozen executable path bug. In standalone PyInstaller `.exe` builds, `settings.ini` is deterministically resolved to the exact directory directly alongside `BinaryReceptor.exe`, never in a temporary directory (`sys._MEIPASS`).
+- **Live Background File-Watcher:** A lightweight background thread monitors `settings.ini`. If you edit and save the INI file externally, BinaryReceptor hot-reloads within 1 second, updates the UI in real time, and restarts listeners if host, port, or mode changed.
+- **100% Backward Compatibility:** Tolerates UTF-8 with BOM (`utf-8-sig`), inline comments (`;` and `#`), case-insensitivity, and legacy key names (`mode`, `port`, `preType`, `postType`).
+
+### 2. Universal BinaryEye HTTP Protocol Compatibility
+- **Asynchronous / Threaded Server:** Listens on port `24234` (configurable) on `/*` and accepts all methods (`GET`, `POST`, `PUT`, `OPTIONS`).
+- **Sub-Millisecond 200 OK Responses:** Returns `HTTP 200 OK` (`application/json`) in under 5ms by dispatching incoming barcodes directly to an internal worker queue. This guarantees BinaryEye's strict 5s connection and 10s read timeouts are never exceeded.
+- **Supports All 5 BinaryEye Forwarding Cases:**
+  1. **Case A â€” JSON POST:** BinaryEye JSON Forwarding & Continuous Scan Callbacks (`{"content": "...", "format": "...", "scanId": "..."}`).
+  2. **Case B â€” Query Parameters:** `GET` or `POST` (`?content=...`, `?result=...`, `?q=...`, `?code=...`).
+  3. **Case C â€” Raw Query String:** `GET /?ScannedBarcodeText` (no `=` required).
+  4. **Case D â€” Raw URL Path:** BinaryEye "GET and simply append content" mode (`GET /123456789` or `GET /scan/123456789`).
+  5. **Case E â€” Form-Urlencoded & Raw Body:** Standard POST forms or direct plain-text body.
+  6. **Health Endpoint:** `GET /` or `GET /health` returns clean diagnostic status.
+
+### 3. Native Win32 Bluetooth RFCOMM Server
+- Replaces legacy `hxBluetooth` with native Windows Bluetooth Sockets (`AF_BTH`, `SOCK_STREAM`, `BTPROTO_RFCOMM`) and `ws2_32.dll` `WSASetServiceW` SDP service registration.
+- Advertises the exact SDP UUID required by BinaryEye: `8a8478c9-2ca8-404b-a0de-101f34ab71ae`.
+- Seamless reconnection: handles client reconnects and adapter power cycles without crashing.
+
+### 4. Tri-Mode Simultaneous Operation with Intelligent Deduplication
+- **Modes:** `bluetooth`, `http`, or `both` (Hybrid Simultaneous Mode).
+- **Sliding Time-Window Deduplicator:** When a device sends a scan via both Bluetooth and HTTP simultaneously, the deduplication engine computes a SHA-256 hash and checks the `scanId`. Duplicate packets within the configurable window (e.g., 1500ms) are suppressed, logged, and counted.
+
+### 5. Low-Level Native Keyboard Injector
+- Replaces legacy `hxKeyType` with Win32 `SendInput` (`KEYEVENTF_UNICODE`).
+- Supports any Unicode character (English, Persian, Arabic, Cyrillic, Chinese, symbols, emojis) regardless of active keyboard layout.
+- Supports control keys (`VK_RETURN`, `VK_TAB`, `VK_SPACE`, `VK_BACK`, `VK_ESCAPE`, `VK_DELETE`, `VK_DOWN`, `VK_UP`, etc.).
+- Optional **Clipboard Paste Mode (`Ctrl+V`)** for instant injection of large QR codes without per-character typing delay, with optional automatic clipboard restoration.
+
+### 6. Intuitive Visual Prefix & Suffix Builder
+- Zero coding knowledge needed: click interactive chip buttons (`+ Enter`, `+ Tab`, `+ Space`, `+ Bksp`, `+ Esc`, `+ Down`, `+ Date`, `+ Time`) or choose presets.
+- Live preview showing the exact keystroke sequence.
+
+### 7. Dynamic QR Code Connection Assistant
+- **Tab 1 â€” Standard Forwarding URL QR:** Shows `http://<LAN_IP>:<PORT>/` with 1-click copy.
+- **Tab 2 â€” 1-Scan Continuous Mode Deep Link QR:** Encodes `binaryeye://scan?continuous=true&callback=http%3A%2F%2F<LAN_IP>%3A<PORT>%2Fscan`. Scanning this QR immediately launches continuous forwarding without touching BinaryEye settings!
+- **Tab 3 â€” Send Barcode to Phone:** Encodes text into 11 supported symbologies (`QR_CODE`, `CODE_128`, `EAN_13`, etc.) using `binaryeye://encode`.
+
+### 8. World-Class Bilingual UI/UX (Persian RTL & English LTR)
+- Built on **PySide6** with native Right-to-Left (`Qt.LayoutDirection.RightToLeft`) support.
+- 1-click language switch between **Persian (ÙØ§Ø±Ø³ÛŒ)** and **English**.
+- Modern Dark Mode and Light Mode with responsive card layouts and live KPI metrics.
+- Full System Tray integration (`QSystemTrayIcon`) with dynamic icon status beacons and localized context menus.
+
+---
+
+## ğŸš€ Quick Start Guide
+
+### Option 1: Standalone Portable Binary (No Python Required)
+1. Download `BinaryReceptor-v3.0.0-windows-x64.zip` from the [Latest Release](https://github.com/ouncommono/BinaryReceptor/releases).
+2. Extract the folder and double-click `BinaryReceptor.exe`.
+3. Click **Start Server** (or it starts automatically if configured).
+
+### Option 2: Running from Source
+```powershell
+# Clone the repository
+git clone https://github.com/ouncommono/BinaryReceptor.git
+cd BinaryReceptor
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Launch BinaryReceptor
+python run.py
+```
+
+---
+
+## ğŸ“± Connecting BinaryEye to BinaryReceptor
+
+### Method A: Instant 1-Scan Continuous Mode (Fastest)
+1. In BinaryReceptor, open the **Connection & QR Code** tab.
+2. Select **2. 1-Scan Continuous Mode**.
+3. Point your phone camera running BinaryEye at the QR code.
+4. BinaryEye will immediately open in continuous scan mode and forward every scan to your PC!
+
+### Method B: Standard Wi-Fi / HTTP Setup
+1. In BinaryReceptor, copy the HTTP Forwarding Endpoint (e.g. `http://192.168.1.50:24234/`).
+2. In BinaryEye, open **Settings > Forwarding > URL**.
+3. Paste the URL. Every barcode scanned will now be posted to your PC.
+
+### Method C: Bluetooth RFCOMM Setup
+1. Pair your Android phone with your Windows PC in Windows Bluetooth Settings.
+2. In BinaryEye, enable **Send scan via Bluetooth** and select your PC.
+3. In BinaryReceptor, set Mode to `both` or `bluetooth`.
+
+---
+
+## âš™ï¸ Configuration (`settings.ini`)
+
+A clean `settings.ini` is generated automatically alongside the executable:
+
+```ini
+[general]
+mode = both               # both, http, or bluetooth
+language = en             # en (English) or fa (ÙØ§Ø±Ø³ÛŒ)
+theme = dark              # dark, light, or system
+auto_start = true         # auto-start server on app launch
+start_minimized = false   # start minimized to tray
+minimize_to_tray = true   # minimize to tray on close (X)
+start_with_windows = false# run on Windows boot
+audio_feedback = true     # beep sound on scan
+tray_notifications = true # Windows tray notifications
+
+[network]
+http_host = 0.0.0.0       # bind to all interfaces
+http_port = 24234         # default port
+
+[bluetooth]
+bt_enabled = true
+service_uuid = 8a8478c9-2ca8-404b-a0de-101f34ab71ae
+service_name = BinaryReceptor
+
+[wedge]
+output_mode = type        # type (keystroke), paste (Ctrl+V), copy_only
+prefix =                  # prefix tokens: {ENTER}, {TAB}, {SPACE}, {DATE}, etc.
+suffix = {ENTER}          # suffix tokens (default: {ENTER})
+inter_key_delay_ms = 0
+pre_typing_delay_ms = 0
+restore_clipboard = true
+
+[deduplication]
+deduplication_enabled = true
+deduplication_window_ms = 1500
+
+[filters]
+trim_whitespace = true
+replace_newlines = none   # none, tab, or space
+regex_pattern = 
+regex_replacement = 
+allowed_formats = all
+auto_open_urls = false
+copy_to_clipboard = false
+```
+
+---
+
+## ğŸ› ï¸ Building the Standalone Executable
+
+Run the automated 1-click build script:
+```powershell
+python build.py
+# or double-click build.bat
+```
+The compiled standalone executable and `settings.ini` will be produced in `dist/BinaryReceptor.exe`.
+
+---
+
+# ğŸ‡®ğŸ‡· Ø±Ø§Ù‡Ù†Ù…Ø§ÛŒ Ø¬Ø§Ù…Ø¹ ÙØ§Ø±Ø³ÛŒ (Persian Documentation)
+
+## Ù…Ø¹Ø±ÙÛŒ Ùˆ Ù…Ø¹Ù…Ø§Ø±ÛŒ
+**Ø¨Ø§ÛŒÙ†Ø±ÛŒâ€ŒØ±Ø³Ù¾ØªÙˆØ± Ù†Ø³Ø®Ù‡ Û³ (BinaryReceptor v3.0.0)** ÛŒÚ© Ø¨Ø§Ø²Ù†ÙˆÛŒØ³ÛŒ Ú©Ø§Ù…Ù„ØŒ Ù…Ø¯Ø±Ù† Ùˆ Ø¨Ø§ Ù…Ø¹Ù…Ø§Ø±ÛŒ Ù†ÙˆÛŒÙ† Ø¨Ø±Ø§ÛŒ Ù†Ø±Ù…â€ŒØ§ÙØ²Ø§Ø± BinaryReceptor Ø§Ø³Øª. Ø§ÛŒÙ† Ø¨Ø±Ù†Ø§Ù…Ù‡ Ø¨Ù‡ Ø¹Ù†ÙˆØ§Ù† Ø³Ø¨Ú©â€ŒØªØ±ÛŒÙ† Ùˆ Ù¾Ø±Ø³Ø±Ø¹Øªâ€ŒØªØ±ÛŒÙ† Ø³Ø±ÙˆØ± Ù‡Ù…Ø±Ø§Ù‡ Ø¯Ø³Ú©ØªØ§Ù¾ Ø¨Ø±Ø§ÛŒ Ø§Ø³Ú©Ù†Ø± Ø¨Ø§Ø±Ú©Ø¯ Ø§Ù†Ø¯Ø±ÙˆÛŒØ¯ [BinaryEye](https://github.com/markusfisch/BinaryEye) Ø·Ø±Ø§Ø­ÛŒ Ø´Ø¯Ù‡ Ø§Ø³Øª. Ø²Ù†Ø¬ÛŒØ±Ù‡ Ù‚Ø¯ÛŒÙ…ÛŒ Haxe/C# Ú©Ø§Ù…Ù„Ø§Ù‹ Ø¨Ø§ Ù¾ÛŒØ§Ø¯Ù‡â€ŒØ³Ø§Ø²ÛŒ Ø¨ÙˆÙ…ÛŒ Ùˆ Ù…Ø¯Ø±Ù† Ù¾Ø§ÛŒØªÙˆÙ† Ùˆ Win32 Ø¬Ø§ÛŒÚ¯Ø²ÛŒÙ† Ø´Ø¯Ù‡ Ùˆ Ø¨Ø±Ù†Ø§Ù…Ù‡ Ø¨Ù‡ ØµÙˆØ±Øª ÛŒÚ© ÙØ§ÛŒÙ„ Ù…Ø³ØªÙ‚Ù„ Ø¨Ø¯ÙˆÙ† Ù†ÛŒØ§Ø² Ø¨Ù‡ Ù‡ÛŒÚ† Ù¾ÛŒØ´â€ŒÙ†ÛŒØ§Ø² Ø±ÙˆÛŒ ÙˆÛŒÙ†Ø¯ÙˆØ² Û±Û° Ùˆ Û±Û± Ø§Ø¬Ø±Ø§ Ù…ÛŒâ€ŒØ´ÙˆØ¯.
+
+Ù‡Ù†Ú¯Ø§Ù…ÛŒ Ú©Ù‡ Ù‡Ø±Ú¯ÙˆÙ†Ù‡ Ø¨Ø§Ø±Ú©Ø¯ Ù…ÛŒÙ„Ù‡â€ŒØ§ÛŒ ÛŒØ§ Ú©Ø¯ Ø¯ÙˆØ¨Ø¹Ø¯ÛŒ QR Ø±Ø§ Ø¨Ø§ Ø¯ÙˆØ±Ø¨ÛŒÙ† Ú¯ÙˆØ´ÛŒ Ø§Ø³Ú©Ù† Ù…ÛŒâ€ŒÚ©Ù†ÛŒØ¯ØŒ Ø§ÛŒÙ† Ø¨Ø±Ù†Ø§Ù…Ù‡ Ø¨Ø§Ø±Ú©Ø¯ Ø±Ø§ Ø§Ø² Ø·Ø±ÛŒÙ‚ **Ø¨Ù„ÙˆØªÙˆØ«** ÛŒØ§ **Ø´Ø¨Ú©Ù‡ Wi-Fi** Ø¯Ø±ÛŒØ§ÙØª Ú©Ø±Ø¯Ù‡ Ùˆ Ø¨Ù„Ø§ÙØ§ØµÙ„Ù‡ Ù…Ø§Ù†Ù†Ø¯ ÛŒÚ© Ø¨Ø§Ø±Ú©Ø¯Ø®ÙˆØ§Ù† ÙÛŒØ²ÛŒÚ©ÛŒ Ø¯Ø± Ù†Ø±Ù…â€ŒØ§ÙØ²Ø§Ø± ÙØ¹Ø§Ù„ Ø´Ù…Ø§ (Ø§Ú©Ø³Ù„ØŒ Ø­Ø³Ø§Ø¨Ø¯Ø§Ø±ÛŒØŒ Ø§Ù†Ø¨Ø§Ø±Ø¯Ø§Ø±ÛŒØŒ Ù…Ø±ÙˆØ±Ú¯Ø±ØŒ Ù†ÙˆØªâ€ŒÙ¾Ø¯ Ùˆ ...) ØªØ§ÛŒÙ¾ ÛŒØ§ Ù¾ÛŒØ³Øª Ù…ÛŒâ€ŒÚ©Ù†Ø¯.
+
+---
+
+## ğŸ’ Ù‚Ø§Ø¨Ù„ÛŒØªâ€ŒÙ‡Ø§ÛŒ Ø¨Ø±Ø¬Ø³ØªÙ‡ Ù†Ø³Ø®Ù‡ Û³.Û°.Û°
+
+1. **Ø³Ø§Ø²Ú¯Ø§Ø±ÛŒ Ú©Ø§Ù…Ù„ Ùˆ Ø³Ø±ÛŒØ¹ Ø¨Ø§ Ù¾Ø±ÙˆØªÚ©Ù„ BinaryEye:**
+   - Ù¾Ø§Ø³Ø® ÙÙˆØ±ÛŒ `200 OK` Ø¯Ø± Ú©Ù…ØªØ± Ø§Ø² Ûµ Ù…ÛŒÙ„ÛŒâ€ŒØ«Ø§Ù†ÛŒÙ‡ Ø¨Ø±Ø§ÛŒ Ø¬Ù„ÙˆÚ¯ÛŒØ±ÛŒ Ø§Ø² Ø®Ø·Ø§ÛŒ Timeout Ø¯Ø± Ú¯ÙˆØ´ÛŒ.
+   - Ù¾Ø´ØªÛŒØ¨Ø§Ù†ÛŒ Ø§Ø² ØªÙ…Ø§Ù… Ø­Ø§Ù„Øªâ€ŒÙ‡Ø§ÛŒ Ø§Ø±Ø³Ø§Ù„ (JSONØŒ Ù¾Ø§Ø±Ø§Ù…ØªØ±Ù‡Ø§ÛŒ GET/POSTØŒ Ù…Ø³ÛŒØ± URL Ø®Ø§Ù… Ùˆ ÙØ±Ù…â€ŒÙ‡Ø§).
+2. **Ø§Ø±ØªØ¨Ø§Ø· Ø¨ÙˆÙ…ÛŒ Ø¨Ù„ÙˆØªÙˆØ« Ùˆ Ø´Ø¨Ú©Ù‡ Ø¨Ù‡ ØµÙˆØ±Øª Ù‡Ù…Ø²Ù…Ø§Ù† (Ø­Ø§Ù„Øª ØªØ±Ú©ÛŒØ¨ÛŒ):**
+   - Ù¾Ø´ØªÛŒØ¨Ø§Ù†ÛŒ Ø§Ø² Ø­Ø§Ù„Øª Ù‡Ù…Ø²Ù…Ø§Ù† (Hybrid)Ø› Ø§Ú¯Ø± Ø´Ø¨Ú©Ù‡ ÛŒØ§ Ø¨Ù„ÙˆØªÙˆØ« Ù‚Ø·Ø¹ Ø´ÙˆØ¯ØŒ Ø§Ø±ØªØ¨Ø§Ø· Ø¯ÛŒÚ¯Ø± Ø¨Ø¯ÙˆÙ† ÙˆÙ‚ÙÙ‡ Ø§Ø³Ú©Ù†â€ŒÙ‡Ø§ Ø±Ø§ Ø¯Ø±ÛŒØ§ÙØª Ù…ÛŒâ€ŒÚ©Ù†Ø¯.
+3. **Ù…ÙˆØªÙˆØ± Ù‡ÙˆØ´Ù…Ù†Ø¯ Ø­Ø°Ù ØªÚ©Ø±Ø§Ø±ÛŒâ€ŒÙ‡Ø§ (Deduplication):**
+   - Ø¬Ù„ÙˆÚ¯ÛŒØ±ÛŒ Ø§Ø² Ø¯ÙˆØ¨Ø§Ø± ØªØ§ÛŒÙ¾ Ø´Ø¯Ù† Ø¨Ø§Ø±Ú©Ø¯Ù‡Ø§ÛŒÛŒ Ú©Ù‡ Ù‡Ù…Ø²Ù…Ø§Ù† Ø§Ø² Ø¨Ù„ÙˆØªÙˆØ« Ùˆ ÙˆØ§ÛŒâ€ŒÙØ§ÛŒ Ø§Ø±Ø³Ø§Ù„ Ù…ÛŒâ€ŒØ´ÙˆÙ†Ø¯ Ø¨Ø§ Ø§Ø³ØªÙØ§Ø¯Ù‡ Ø§Ø² Ù‡Ø´ SHA-256 Ùˆ Ø´Ù†Ø§Ø³Ù‡ `scanId`.
+4. **Ø³Ø§Ø²Ù†Ø¯Ù‡ Ø¨ØµØ±ÛŒ Ú©Ù„ÛŒØ¯Ù‡Ø§ÛŒ Ù¾ÛŒØ´ÙˆÙ†Ø¯ Ùˆ Ù¾Ø³ÙˆÙ†Ø¯ (Ø¨Ø¯ÙˆÙ† Ù†ÛŒØ§Ø² Ø¨Ù‡ Ú©Ø¯Ù†ÙˆÛŒØ³ÛŒ):**
+   - Ø§Ù…Ú©Ø§Ù† Ø§ÙØ²ÙˆØ¯Ù† Ú©Ù„ÛŒØ¯Ù‡Ø§ÛŒ Ø§ÛŒÙ†ØªØ±ØŒ ØªØ¨ØŒ ÙØ§ØµÙ„Ù‡ØŒ ØªØ§Ø±ÛŒØ® Ùˆ Ø³Ø§Ø¹Øª Ø¨Ø§ Ú©Ù„ÛŒÚ© Ø±ÙˆÛŒ Ø¯Ú©Ù…Ù‡â€ŒÙ‡Ø§ÛŒ Ø¢Ù…Ø§Ø¯Ù‡ Ø¨Ø¯ÙˆÙ† Ù†ÛŒØ§Ø² Ø¨Ù‡ Ø¯Ø§Ù†Ø³ØªÙ† Ú©Ø¯Ù‡Ø§ÛŒ Ø®Ø§Øµ.
+5. **Ø¯Ø³ØªÛŒØ§Ø± Ù‡ÙˆØ´Ù…Ù†Ø¯ Ø§ØªØµØ§Ù„ Ùˆ Ø¨Ø§Ø±Ú©Ø¯Ù‡Ø§ÛŒ QR:**
+   - ØªÙˆÙ„ÛŒØ¯ Ú©Ø¯ QR Ø¨Ø±Ø§ÛŒ Ø§ØªØµØ§Ù„ Ø®ÙˆØ¯Ú©Ø§Ø± Ùˆ ÙØ¹Ø§Ù„â€ŒØ³Ø§Ø²ÛŒ Ø§Ø³Ú©Ù† Ù¾ÛŒÙˆØ³ØªÙ‡ ØªÙ†Ù‡Ø§ Ø¨Ø§ ÛŒÚ© Ø¨Ø§Ø± Ø§Ø³Ú©Ù† Ø¯ÙˆØ±Ø¨ÛŒÙ† Ú¯ÙˆØ´ÛŒ.
+6. **Ø±Ø§Ø¨Ø· Ú©Ø§Ø±Ø¨Ø±ÛŒ Ø¯ÙˆØ²Ø¨Ø§Ù†Ù‡ (ÙØ§Ø±Ø³ÛŒ Ø±Ø§Ø³Øªâ€ŒØ¨Ù‡â€ŒÚ†Ù¾ Ùˆ Ø§Ù†Ú¯Ù„ÛŒØ³ÛŒ):**
+   - ØªØºÛŒÛŒØ± Ø¢Ù†ÛŒ Ø²Ø¨Ø§Ù† Ø¨Ù‡ ÙØ§Ø±Ø³ÛŒ Ø¨Ø§ Ú†ÛŒØ¯Ù…Ø§Ù† Ú©Ø§Ù…Ù„ RTL Ùˆ ØªØ§ÛŒÙ¾ÙˆÚ¯Ø±Ø§ÙÛŒ Ø²ÛŒØ¨Ø§.
+   - Ø­Ø§Ù„Øª Ø¯Ø§Ø±Ú© (ØªÛŒØ±Ù‡) Ùˆ Ù„Ø§ÛŒØª (Ø±ÙˆØ´Ù†).
+7. **Ù‡Ù…Ú¯Ø§Ù…â€ŒØ³Ø§Ø²ÛŒ Ú©Ø§Ù…Ù„ Ø¨Ø§ ØªØ³Ú©â€ŒØ¨Ø§Ø± Ùˆ Ø³ÛŒØ³ØªÙ…â€ŒØªØ±ÛŒ ÙˆÛŒÙ†Ø¯ÙˆØ²:**
+   - Ø¢ÛŒÚ©ÙˆÙ† Ú†Ù†Ø¯Ú©ÛŒÙÛŒØªÙ‡ØŒ Ù…Ù†ÙˆÛŒ Ú©Ø§Ù…Ù„ Ú©Ù†Ø§Ø± Ø³Ø§Ø¹ØªØŒ Ø¨Ø§Ø²Ø®ÙˆØ§Ù†ÛŒ Ø®ÙˆØ¯Ú©Ø§Ø± ØªØºÛŒÛŒØ±Ø§Øª ÙØ§ÛŒÙ„ `settings.ini`.
+
+---
+
+## ğŸ“‹ Ø³Ø§Ø®ØªØ§Ø± Ù¾Ø±ÙˆÚ˜Ù‡ (Project Layout)
+
+```
+BinaryReceptor/
+â”œâ”€â”€ assets/
+â”‚   â””â”€â”€ icon.ico                    # Multi-resolution icon (16x16 to 256x256)
+â”œâ”€â”€ legacy/                         # Archived legacy Haxe/C# codebase
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ core/
+â”‚   â”‚   â”œâ”€â”€ bt_server.py            # Native Windows AF_BTH RFCOMM & SDP server
+â”‚   â”‚   â”œâ”€â”€ deduplicator.py         # Thread-safe sliding time-window deduplication
+â”‚   â”‚   â”œâ”€â”€ http_server.py          # Universal BinaryEye HTTP webhook server
+â”‚   â”‚   â”œâ”€â”€ key_injector.py         # Low-level Win32 SendInput Unicode injector
+â”‚   â”‚   â””â”€â”€ qr_helper.py            # QR generator & BinaryEye deep links
+â”‚   â”œâ”€â”€ ui/
+â”‚   â”‚   â”œâ”€â”€ i18n.py                 # Bilingual FA/EN localization dictionaries
+â”‚   â”‚   â”œâ”€â”€ icon_gen.py             # Vector-style multi-resolution icon builder
+â”‚   â”‚   â”œâ”€â”€ main_window.py          # PySide6 RTL/LTR responsive dashboard
+â”‚   â”‚   â”œâ”€â”€ styles.py               # Dark & Light QSS stylesheets
+â”‚   â”‚   â””â”€â”€ tray.py                 # System Tray controller
+â”‚   â”œâ”€â”€ config.py                   # Deterministic settings.ini manager & watcher
+â”‚   â”œâ”€â”€ main.py                     # Entry point, AppUserModelID, mutex, CLI
+â”‚   â””â”€â”€ version.py                  # Version constants (3.0.0)
+â”œâ”€â”€ tests/                          # Comprehensive pytest test suite (35+ tests)
+â”œâ”€â”€ .github/workflows/
+â”‚   â””â”€â”€ build_release.yml           # Automated CI/CD & release pipeline
+â”œâ”€â”€ build.py                        # Standalone PyInstaller build engine
+â”œâ”€â”€ build.bat                       # 1-click Windows compilation script
+â”œâ”€â”€ pytest.ini                      # Pytest configuration
+â”œâ”€â”€ requirements.txt                # Runtime dependencies
+â”œâ”€â”€ requirements-build.txt          # Build & test dependencies
+â”œâ”€â”€ run.py                          # Development launcher
+â””â”€â”€ settings.ini                    # Local configuration file
+```
+
+---
+
+## ğŸ§ª Ø§Ø¬Ø±Ø§ÛŒ Ø¢Ø²Ù…ÙˆÙ†â€ŒÙ‡Ø§ (Running Tests)
+
+ØªÙ…Ø§Ù… Ù‚Ø§Ø¨Ù„ÛŒØªâ€ŒÙ‡Ø§ Ø¨Ø§ Ù¾ÙˆØ´Ø´ Ø¬Ø§Ù…Ø¹ ØªØ³Øª Ø¢Ø²Ù…ÙˆØ¯Ù‡ Ø´Ø¯Ù‡â€ŒØ§Ù†Ø¯:
+```powershell
+python -m pytest -v
+```
+
+---
+
+## ğŸ“œ Ù„Ø§ÛŒØ³Ù†Ø³ (License)
+Ø§ÛŒÙ† Ù¾Ø±ÙˆÚ˜Ù‡ ØªØ­Øª Ù„Ø§ÛŒØ³Ù†Ø³ [GPL-3.0](LICENSE) Ù…Ù†ØªØ´Ø± Ø´Ø¯Ù‡ Ø§Ø³Øª.
+BinaryReceptor fork modernized by **ouncommono**.
+Original fork upstream: [KamaleiZestri/BinaryReceptor](https://github.com/KamaleiZestri/BinaryReceptor).
+Companion Android app: [BinaryEye](https://github.com/markusfisch/BinaryEye) by Markus Fisch.

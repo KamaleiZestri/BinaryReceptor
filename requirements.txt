@@ -1,0 +1,5 @@
+PySide6>=6.5.0
+Pillow>=10.0.0
+qrcode>=7.4.2
+psutil>=5.9.0
+pyperclip>=1.8.0

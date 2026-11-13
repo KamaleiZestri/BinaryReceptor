@@ -1,0 +1,81 @@
+name: Build & Release BinaryReceptor
+
+on:
+  push:
+    branches:
+      - main
+      - "codex/**"
+    tags:
+      - "v*"
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-windows:
+    name: Build Windows Executable
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install Build Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-build.txt
+
+      - name: Run PyTest Test Suite
+        run: |
+          python -m pytest -v tests/
+
+      - name: Build Standalone Executable
+        run: |
+          python build.py
+
+      - name: Package Portable Distribution Zip
+        shell: pwsh
+        run: |
+          Compress-Archive -Path dist/BinaryReceptor.exe,dist/settings.ini -DestinationPath dist/BinaryReceptor-v3.0.0-windows-x64.zip
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: BinaryReceptor-v3.0.0-windows-x64
+          path: |
+            dist/BinaryReceptor.exe
+            dist/settings.ini
+            dist/BinaryReceptor-v3.0.0-windows-x64.zip
+
+  publish-release:
+    name: Publish GitHub Release
+    needs: build-windows
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: windows-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: BinaryReceptor-v3.0.0-windows-x64
+          path: release_assets
+
+      - name: Publish Release to GitHub
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: |
+          $tag = $env:GITHUB_REF_NAME
+          gh release create $tag release_assets/BinaryReceptor-v3.0.0-windows-x64.zip release_assets/BinaryReceptor.exe release_assets/settings.ini --title "BinaryReceptor $tag" --generate-notes

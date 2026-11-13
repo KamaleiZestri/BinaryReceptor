@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>false</SelfContained>
+    <PublishTrimmed>false</PublishTrimmed>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>..\..\res\icon.ico</ApplicationIcon>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TargetName>BinaryReceptorGUI</TargetName>
+  </PropertyGroup>
+
+   <ItemGroup>
+    <None Update="..\..\res\icon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="..\..\res\icon.ico" />
+  </ItemGroup>
+</Project>
