@@ -1,10 +1,11 @@
-"""Automated build script for BinaryReceptor v3.0.0.
+"""Automated build script for BinaryReceptor v3.1.0.
 
 Compiles the application into a standalone Windows .exe using PyInstaller:
   - --noconsole (windowed GUI mode)
   - --onefile (single binary executable)
   - --name BinaryReceptor
   - --icon assets/icon.ico (multi-resolution 16-256px icon)
+  - --version-file res/version.txt (Windows PE metadata)
   - Copies default settings.ini alongside BinaryReceptor.exe in dist/
 """
 from __future__ import annotations
@@ -20,6 +21,7 @@ DIST_DIR = ROOT_DIR / "dist"
 BUILD_DIR = ROOT_DIR / "build"
 ASSETS_DIR = ROOT_DIR / "assets"
 ICON_PATH = ASSETS_DIR / "icon.ico"
+VERSION_FILE = ROOT_DIR / "res" / "version.txt"
 SETTINGS_SRC = ROOT_DIR / "settings.ini"
 
 
@@ -56,6 +58,7 @@ def run_pyinstaller():
         "BinaryReceptor",
         f"--icon={ICON_PATH}",
         f"--add-data={ASSETS_DIR}{os.pathsep}assets",
+        f"--version-file={VERSION_FILE}" if VERSION_FILE.exists() else "",
         "--hidden-import=PySide6.QtCore",
         "--hidden-import=PySide6.QtGui",
         "--hidden-import=PySide6.QtWidgets",
@@ -65,6 +68,7 @@ def run_pyinstaller():
         "--hidden-import=pyperclip",
         str(entry_point),
     ]
+    cmd = [arg for arg in cmd if arg]
 
     print("Command:", " ".join(cmd))
     proc = subprocess.run(cmd, cwd=str(ROOT_DIR))

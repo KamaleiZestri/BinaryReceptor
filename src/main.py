@@ -51,7 +51,7 @@ class SingleInstanceMutex:
 
     ERROR_ALREADY_EXISTS = 183
 
-    def __init__(self, mutex_name: str = "Global\\BinaryReceptor_3_0_0_Mutex") -> None:
+    def __init__(self, mutex_name: str = "Global\\BinaryReceptor_3_1_0_Mutex") -> None:
         self.mutex_name = mutex_name
         self.handle = None
         self.already_running = False

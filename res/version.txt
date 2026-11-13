@@ -1,7 +1,7 @@
 VSVersionInfo(
   ffi=FixedFileInfo(
-    filevers=(3, 0, 0, 0),
-    prodvers=(3, 0, 0, 0),
+    filevers=(3, 1, 0, 0),
+    prodvers=(3, 1, 0, 0),
     mask=0x3f,
     flags=0x0,
     OS=0x40004,
@@ -12,13 +12,13 @@ VSVersionInfo(
   kids=[
     StringFileInfo([
       StringTable('040904B0', [
-        StringStruct('CompanyName', 'ouncommono'),
+        StringStruct('CompanyName', 'BinaryReceptor'),
         StringStruct('FileDescription', 'BinaryReceptor barcode receiver'),
-        StringStruct('FileVersion', '3.0.0'),
+        StringStruct('FileVersion', '3.1.0'),
         StringStruct('InternalName', 'BinaryReceptor'),
         StringStruct('OriginalFilename', 'BinaryReceptor.exe'),
         StringStruct('ProductName', 'BinaryReceptor'),
-        StringStruct('ProductVersion', '3.0.0')
+        StringStruct('ProductVersion', '3.1.0')
       ])
     ]),
     VarFileInfo([VarStruct('Translation', [1033, 1200])])

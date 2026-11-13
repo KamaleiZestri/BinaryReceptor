@@ -232,9 +232,12 @@ class BluetoothServerController:
         """Deregister SDP service record from Windows."""
         if ws2_32 and self._queryset is not None:
             try:
-                ws2_32.WSASetServiceW(ctypes.byref(self._queryset), RNRSERVICE_DEREGISTER, 0)
+                ws2_32.WSASetServiceW(ctypes.byref(self._queryset), RNRSERVICE_DELETE, 0)
             except Exception:
-                pass
+                try:
+                    ws2_32.WSASetServiceW(ctypes.byref(self._queryset), RNRSERVICE_DEREGISTER, 0)
+                except Exception:
+                    pass
             self._queryset = None
 
     def start(self) -> tuple[bool, str]:

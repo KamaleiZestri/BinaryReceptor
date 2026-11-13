@@ -1,4 +1,4 @@
-"""Modern high-DPI responsive Dark and Light QSS stylesheets for BinaryReceptor v3.0.0.
+"""Modern high-DPI responsive Dark and Light QSS stylesheets for BinaryReceptor v3.1.0.
 
 Engineered with full RTL (Right-to-Left) Persian layout support and beautiful typography
 (Vazirmatn, Segoe UI, Tahoma).
@@ -64,10 +64,38 @@ QPushButton#MasterPowerBtnStopped:hover {{
     background-color: #991b1b;
 }}
 
-/* KPI Metric Cards */
+/* Dynamic Top Status & KPI Cards */
 .KPICard {{
     background-color: #1e293b;
     border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 10px;
+}}
+
+.KPICardActive {{
+    background-color: #0d2822;
+    border: 1px solid #10b981;
+    border-radius: 8px;
+    padding: 10px;
+}}
+
+.KPICardInactive {{
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 10px;
+}}
+
+.KPICardStopped {{
+    background-color: #2a1215;
+    border: 1px solid #ef4444;
+    border-radius: 8px;
+    padding: 10px;
+}}
+
+.KPICardAmber {{
+    background-color: #2b1d09;
+    border: 1px solid #f59e0b;
     border-radius: 8px;
     padding: 10px;
 }}
@@ -80,13 +108,14 @@ QPushButton#MasterPowerBtnStopped:hover {{
 
 .KPICardValue {{
     color: #ffffff;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 }}
 
 /* Status Badges */
 .StatusBadge {{
     background-color: #334155;
+    color: #cbd5e1;
     border-radius: 6px;
     padding: 4px 10px;
     font-size: 12px;
@@ -105,10 +134,20 @@ QPushButton#MasterPowerBtnStopped:hover {{
 
 .StatusBadgeInactive {{
     background-color: #334155;
-    color: #cbd5e1;
+    color: #94a3b8;
     border-radius: 6px;
     padding: 4px 10px;
     font-size: 12px;
+}}
+
+.StatusBadgeError {{
+    background-color: #7f1d1d;
+    color: #fca5a5;
+    border: 1px solid #ef4444;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
 }}
 
 /* Tab Widget & Navigation */
@@ -170,6 +209,28 @@ QPushButton#SecondaryBtn:hover {{
     background-color: #475569;
 }}
 
+QPushButton#BtnSaveSettings {{
+    background-color: #059669;
+    color: #ffffff;
+    border: 1px solid #10b981;
+    font-weight: bold;
+    padding: 8px 18px;
+}}
+QPushButton#BtnSaveSettings:hover {{
+    background-color: #047857;
+}}
+
+QPushButton#BtnResetDefaults {{
+    background-color: #451a03;
+    color: #fde68a;
+    border: 1px solid #b45309;
+    font-weight: 600;
+    padding: 8px 16px;
+}}
+QPushButton#BtnResetDefaults:hover {{
+    background-color: #78350f;
+}}
+
 QPushButton#ChipBtn {{
     background-color: #1e293b;
     color: #38bdf8;
@@ -182,6 +243,26 @@ QPushButton#ChipBtn {{
 QPushButton#ChipBtn:hover {{
     background-color: #0369a1;
     color: #ffffff;
+}}
+
+/* Sticky Settings Footer */
+#StickyFooter {{
+    background-color: #1e293b;
+    border-top: 1px solid #334155;
+    border-radius: 8px;
+    padding: 10px 14px;
+}}
+
+#UnsavedChangesLabel {{
+    color: #f59e0b;
+    font-weight: bold;
+    font-size: 13px;
+}}
+
+#AllSavedLabel {{
+    color: #10b981;
+    font-weight: 600;
+    font-size: 13px;
 }}
 
 /* Line Edits & Text Inputs */
@@ -334,10 +415,38 @@ QPushButton#MasterPowerBtnStopped:hover {{
     background-color: #dc2626;
 }}
 
-/* KPI Metric Cards */
+/* Dynamic Top Status & KPI Cards */
 .KPICard {{
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px;
+}}
+
+.KPICardActive {{
+    background-color: #d1fae5;
+    border: 1px solid #10b981;
+    border-radius: 8px;
+    padding: 10px;
+}}
+
+.KPICardInactive {{
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px;
+}}
+
+.KPICardStopped {{
+    background-color: #fee2e2;
+    border: 1px solid #ef4444;
+    border-radius: 8px;
+    padding: 10px;
+}}
+
+.KPICardAmber {{
+    background-color: #fef3c7;
+    border: 1px solid #f59e0b;
     border-radius: 8px;
     padding: 10px;
 }}
@@ -350,13 +459,14 @@ QPushButton#MasterPowerBtnStopped:hover {{
 
 .KPICardValue {{
     color: #0f172a;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 }}
 
 /* Status Badges */
 .StatusBadge {{
     background-color: #e2e8f0;
+    color: #475569;
     border-radius: 6px;
     padding: 4px 10px;
     font-size: 12px;
@@ -375,10 +485,20 @@ QPushButton#MasterPowerBtnStopped:hover {{
 
 .StatusBadgeInactive {{
     background-color: #e2e8f0;
-    color: #475569;
+    color: #64748b;
     border-radius: 6px;
     padding: 4px 10px;
     font-size: 12px;
+}}
+
+.StatusBadgeError {{
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #ef4444;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
 }}
 
 /* Tab Widget & Navigation */
@@ -436,6 +556,28 @@ QPushButton#SecondaryBtn:hover {{
     background-color: #cbd5e1;
 }}
 
+QPushButton#BtnSaveSettings {{
+    background-color: #059669;
+    color: #ffffff;
+    border: 1px solid #047857;
+    font-weight: bold;
+    padding: 8px 18px;
+}}
+QPushButton#BtnSaveSettings:hover {{
+    background-color: #047857;
+}}
+
+QPushButton#BtnResetDefaults {{
+    background-color: #fef3c7;
+    color: #92400e;
+    border: 1px solid #d97706;
+    font-weight: 600;
+    padding: 8px 16px;
+}}
+QPushButton#BtnResetDefaults:hover {{
+    background-color: #fde68a;
+}}
+
 QPushButton#ChipBtn {{
     background-color: #f0f9ff;
     color: #0284c7;
@@ -448,6 +590,26 @@ QPushButton#ChipBtn {{
 QPushButton#ChipBtn:hover {{
     background-color: #0284c7;
     color: #ffffff;
+}}
+
+/* Sticky Settings Footer */
+#StickyFooter {{
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px 14px;
+}}
+
+#UnsavedChangesLabel {{
+    color: #d97706;
+    font-weight: bold;
+    font-size: 13px;
+}}
+
+#AllSavedLabel {{
+    color: #059669;
+    font-weight: 600;
+    font-size: 13px;
 }}
 
 /* Line Edits & Text Inputs */

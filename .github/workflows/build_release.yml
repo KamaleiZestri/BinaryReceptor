@@ -46,16 +46,16 @@ jobs:
       - name: Package Portable Distribution Zip
         shell: pwsh
         run: |
-          Compress-Archive -Path dist/BinaryReceptor.exe,dist/settings.ini -DestinationPath dist/BinaryReceptor-v3.0.0-windows-x64.zip
+          Compress-Archive -Path dist/BinaryReceptor.exe,dist/settings.ini -DestinationPath dist/BinaryReceptor-v3.1.0-win64.zip
 
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: BinaryReceptor-v3.0.0-windows-x64
+          name: BinaryReceptor-v3.1.0-win64
           path: |
             dist/BinaryReceptor.exe
             dist/settings.ini
-            dist/BinaryReceptor-v3.0.0-windows-x64.zip
+            dist/BinaryReceptor-v3.1.0-win64.zip
 
   publish-release:
     name: Publish GitHub Release
@@ -69,7 +69,7 @@ jobs:
       - name: Download Build Artifacts
         uses: actions/download-artifact@v4
         with:
-          name: BinaryReceptor-v3.0.0-windows-x64
+          name: BinaryReceptor-v3.1.0-win64
           path: release_assets
 
       - name: Publish Release to GitHub
@@ -78,4 +78,4 @@ jobs:
         shell: pwsh
         run: |
           $tag = $env:GITHUB_REF_NAME
-          gh release create $tag release_assets/BinaryReceptor-v3.0.0-windows-x64.zip release_assets/BinaryReceptor.exe release_assets/settings.ini --title "BinaryReceptor $tag" --generate-notes
+          gh release create $tag release_assets/BinaryReceptor-v3.1.0-win64.zip release_assets/BinaryReceptor.exe release_assets/settings.ini --title "BinaryReceptor $tag" --generate-notes

@@ -1,4 +1,4 @@
-"""System Tray controller for BinaryReceptor v3.0.0 using native PySide6 QSystemTrayIcon."""
+"""System Tray controller for BinaryReceptor v3.1.0 using native PySide6 QSystemTrayIcon."""
 from __future__ import annotations
 
 import io
@@ -11,6 +11,7 @@ from PySide6.QtWidgets import QSystemTrayIcon, QMenu, QWidget
 
 from src.ui.i18n import tr
 from src.ui.icon_gen import render_app_icon
+from src.version import __version__
 
 
 def create_tray_pixmap(status: str = "running") -> QPixmap:
@@ -31,6 +32,7 @@ class SystemTrayController(QObject):
     request_show_qr = Signal()
     request_toggle_server = Signal()
     request_set_mode = Signal(str)
+    request_toggle_language = Signal()
     request_exit = Signal()
 
     def __init__(self, parent_widget: QWidget | None = None) -> None:
@@ -44,7 +46,7 @@ class SystemTrayController(QObject):
         self.icon_stopped = QIcon(create_tray_pixmap("stopped"))
 
         self.tray = QSystemTrayIcon(self.icon_stopped, parent_widget)
-        self.tray.setToolTip("BinaryReceptor v3.0.0")
+        self.tray.setToolTip(f"BinaryReceptor v{__version__}")
 
         self.menu = QMenu(parent_widget)
         self.tray.setContextMenu(self.menu)
@@ -68,13 +70,14 @@ class SystemTrayController(QObject):
 
         # Update tray icon
         self.tray.setIcon(self.icon_running if is_running else self.icon_stopped)
+        self.tray.setToolTip(f"BinaryReceptor v{__version__} - {tr('status_running' if is_running else 'status_stopped', lang)}")
         self.rebuild_menu()
 
     def rebuild_menu(self) -> None:
-        """Reconstruct the localized context menu."""
+        """Reconstruct the localized context menu with two-way sync."""
         self.menu.clear()
 
-        # Header item (non-clickable status display)
+        # Header item (status display)
         mode_label = {
             "both": tr("opt_mode_both", self.lang),
             "http": tr("opt_mode_http", self.lang),
@@ -82,7 +85,7 @@ class SystemTrayController(QObject):
         }.get(self.current_mode, self.current_mode)
 
         status_text = tr("status_running", self.lang) if self.is_running else tr("status_stopped", self.lang)
-        header_text = f"BinaryReceptor v3.0.0 · {status_text} [{mode_label}]"
+        header_text = f"BinaryReceptor v{__version__} · {status_text} [{mode_label}]"
         header_action = self.menu.addAction(header_text)
         header_action.setEnabled(False)
 
@@ -93,8 +96,8 @@ class SystemTrayController(QObject):
         act_toggle = self.menu.addAction(toggle_text)
         act_toggle.triggered.connect(lambda: self.request_toggle_server.emit())
 
-        # Mode submenu
-        mode_menu = self.menu.addMenu("Mode / حالت سرور")
+        # Operation Mode submenu
+        mode_menu = self.menu.addMenu(tr("tray_mode_menu", self.lang))
         mode_group = QActionGroup(self)
         mode_group.setExclusive(True)
 
@@ -110,6 +113,10 @@ class SystemTrayController(QObject):
             act.triggered.connect(lambda checked=False, m=m_id: self.request_set_mode.emit(m))
 
         self.menu.addSeparator()
+
+        # Language Switcher
+        act_lang = self.menu.addAction(f"🌐 {tr('lang_switch', self.lang)}")
+        act_lang.triggered.connect(lambda: self.request_toggle_language.emit())
 
         # Show QR / Connection Info
         act_qr = self.menu.addAction(tr("tray_show_qr", self.lang))

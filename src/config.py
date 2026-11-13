@@ -1,4 +1,4 @@
-"""Configuration manager for BinaryReceptor v3.0.0.
+"""Configuration manager for BinaryReceptor v3.1.0.
 
 Provides deterministic settings.ini path resolution (alongside the executable),
 automatic default generation with comprehensive comments, live file-watcher hot-reload,
@@ -270,21 +270,52 @@ def parse_tokens(template: str) -> list[tuple[str, Any]]:
     return actions
 
 
-def format_token_preview(prefix: str, content: str, suffix: str) -> str:
-    """Generate a clean visual preview of the combined scan output."""
-    def _display(text: str) -> str:
-        s = text or ""
-        s = s.replace("{ENTER}", "↵ [Enter] ")
-        s = s.replace("{TAB}", "⇥ [Tab] ")
-        s = s.replace("{SPACE}", "␣ [Space] ")
-        s = s.replace("{BACKSPACE}", "⌫ [Bksp] ")
-        s = s.replace("{ESC}", "⎋ [Esc] ")
-        s = s.replace("{DOWN}", "↓ [Down] ")
-        return s
+def render_keystroke_output(prefix: str, content: str, suffix: str) -> str:
+    """Render the true simulated keystroke output exactly as it appears in a target application.
 
-    p = _display(prefix)
-    s = _display(suffix)
-    return f"{p}{content}{s}"
+    Replaces {ENTER} with actual newline, {TAB} with actual tab, {SPACE} with ' ',
+    simulates {BACKSPACE} character removal, and eliminates raw token syntax.
+    """
+    raw_combined = f"{prefix or ''}{content or ''}{suffix or ''}"
+    raw_combined = raw_combined.replace("\\r\\n", "\n").replace("\\n", "\n").replace("\\t", "\t")
+
+    now = datetime.now()
+    raw_combined = raw_combined.replace("{DATE}", now.strftime("%Y-%m-%d"))
+    raw_combined = raw_combined.replace("{TIME}", now.strftime("%H:%M:%S"))
+    raw_combined = raw_combined.replace("{TIMESTAMP}", now.strftime("%Y-%m-%d %H:%M:%S"))
+
+    raw_combined = raw_combined.replace("{ENTER}", "\n").replace("{RETURN}", "\n")
+    raw_combined = raw_combined.replace("{enter}", "\n").replace("{return}", "\n")
+    raw_combined = raw_combined.replace("{TAB}", "\t").replace("{tab}", "\t")
+    raw_combined = raw_combined.replace("{SPACE}", " ").replace("{space}", " ")
+
+    tokens_to_strip = [
+        "{ESC}", "{ESCAPE}", "{DOWN}", "{UP}", "{LEFT}", "{RIGHT}",
+        "{HOME}", "{END}", "{DELETE}", "{DEL}", "{NONE}", "{EMPTY}",
+    ]
+    for i in range(1, 13):
+        tokens_to_strip.append(f"{{F{i}}}")
+    for tok in tokens_to_strip:
+        raw_combined = raw_combined.replace(tok, "")
+        raw_combined = raw_combined.replace(tok.lower(), "")
+
+    # Handle {BACKSPACE} simulation
+    pattern = re.compile(r"(\{BACKSPACE\}|\{BKSP\})", re.IGNORECASE)
+    parts = pattern.split(raw_combined)
+    chars: list[str] = []
+    for part in parts:
+        if pattern.match(part):
+            if chars:
+                chars.pop()
+        else:
+            chars.extend(list(part))
+
+    return "".join(chars)
+
+
+def format_token_preview(prefix: str, content: str, suffix: str) -> str:
+    """Generate the actual rendered keystroke output without raw token syntax."""
+    return render_keystroke_output(prefix, content, suffix)
 
 
 @dataclass

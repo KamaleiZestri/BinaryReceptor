@@ -166,12 +166,12 @@ def parse_binaryeye_request(
     if clean_path.lower().startswith("scan/"):
         clean_path = clean_path[5:].strip("/")
 
-    is_health = (clean_path.lower() in ("", "health", "status", "ping", "favicon.ico") and not query_str and not body_bytes)
+    is_health = (clean_path.lower() in ("", "health", "status", "ping", "favicon.ico", "start") and not query_str and not body_bytes)
 
     if content is None and not is_health and clean_path:
         # BinaryEye "GET and simply append content" mode
         unquoted_path = urllib.parse.unquote(clean_path).strip()
-        if unquoted_path and unquoted_path.lower() not in ("health", "status", "ping", "favicon.ico"):
+        if unquoted_path and unquoted_path.lower() not in ("health", "status", "ping", "favicon.ico", "start"):
             content = unquoted_path
 
     if content is not None:
@@ -216,6 +216,50 @@ class BinaryReceptorHTTPHandler(BaseHTTPRequestHandler):
         self.wfile.write(b"{}")
 
     def _handle_any_request(self) -> None:
+        # Check for /start landing page
+        parsed_url = urllib.parse.urlsplit(self.path)
+        clean_path = parsed_url.path.strip("/")
+        if self.command == "GET" and clean_path.lower() == "start":
+            host_header = self.headers.get("host") or f"{self.server.server_address[0]}:{self.server.server_address[1]}"
+            deep_link = f"binaryeye://scan?continuous=true&callback=http%3A%2F%2F{urllib.parse.quote(host_header, safe='')}%2Fscan"
+            html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BinaryReceptor - BinaryEye Launch</title>
+  <style>
+    body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box; text-align: center; }}
+    .card {{ background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 32px 24px; max-width: 440px; width: 100%; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }}
+    h1 {{ font-size: 24px; margin-bottom: 8px; color: #38bdf8; }}
+    p {{ font-size: 15px; color: #94a3b8; line-height: 1.5; margin-bottom: 24px; }}
+    .btn {{ display: inline-block; background: #10b981; color: #ffffff; text-decoration: none; font-size: 18px; font-weight: bold; padding: 14px 28px; border-radius: 12px; transition: background 0.2s; box-shadow: 0 4px 12px rgba(16,185,129,0.4); }}
+    .btn:hover {{ background: #059669; }}
+    .info {{ margin-top: 24px; font-size: 12px; color: #64748b; word-break: break-all; }}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>BinaryReceptor v{__version__}</h1>
+    <p>Tap the button below to launch <strong>BinaryEye</strong> on your phone in continuous scan forwarding mode.</p>
+    <a href="{deep_link}" class="btn">🚀 Start Continuous Scan</a>
+    <div class="info">Target: http://{host_header}/scan</div>
+  </div>
+</body>
+</html>"""
+            html_bytes = html.encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.send_header("Content-Length", str(len(html_bytes)))
+            self.send_header("Connection", "close")
+            self.end_headers()
+            try:
+                self.wfile.write(html_bytes)
+                self.wfile.flush()
+            except (BrokenPipeError, ConnectionResetError):
+                pass
+            return
+
         # 1. Read request body if present
         body_bytes = b""
         try:
@@ -242,22 +286,25 @@ class BinaryReceptorHTTPHandler(BaseHTTPRequestHandler):
         if payload is not None:
             self.server.dispatch_scan(payload)
 
-        # 5. Build instant 200 OK response
+        # 5. Build clean, instant HTTP 200 OK response with exact Content-Length
         status_data = {
             "status": "ok",
             "app": APP_NAME,
             "version": __version__,
-            "mode": "scan_received" if payload is not None else "ready",
-            "timestamp": urllib.parse.quote(self.date_time_string()),
+            "mode": "ready",
         }
         if payload is not None and payload.scan_id:
             status_data["scanId"] = payload.scan_id
-
-        response_bytes = json.dumps(status_data).encode("utf-8")
+        response_bytes = (json.dumps(status_data) + "\n").encode("utf-8")
+        content_type = "application/json; charset=utf-8"
 
         self.send_response(200)
-        self._send_cors_headers()
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, PUT, OPTIONS, HEAD")
+        self.send_header("Access-Control-Allow-Headers", "*")
+        self.send_header("Content-Type", content_type)
         self.send_header("Content-Length", str(len(response_bytes)))
+        self.send_header("Connection", "close")
         self.end_headers()
         try:
             self.wfile.write(response_bytes)

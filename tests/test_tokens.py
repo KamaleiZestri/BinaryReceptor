@@ -57,6 +57,11 @@ def test_parse_dynamic_date_and_time():
 
 def test_format_token_preview():
     preview = format_token_preview("{TAB}", "123456", "{ENTER}")
-    assert "⇥ [Tab]" in preview
-    assert "123456" in preview
-    assert "↵ [Enter]" in preview
+    assert preview == "\t123456\n"
+    assert "{TAB}" not in preview
+    assert "{ENTER}" not in preview
+
+
+def test_backspace_keystroke_rendering():
+    preview = format_token_preview("", "ABCD{BACKSPACE}E", "{ENTER}")
+    assert preview == "ABCE\n"

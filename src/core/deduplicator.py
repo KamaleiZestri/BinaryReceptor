@@ -1,10 +1,11 @@
-"""Thread-safe sliding time-window deduplication engine for BinaryReceptor v3.0.0."""
+"""Thread-safe sliding time-window deduplication engine for BinaryReceptor v3.1.0."""
 from __future__ import annotations
 
 import hashlib
 import threading
 import time
-from dataclasses import dataclass, field
+import urllib.parse
+from dataclasses import dataclass
 
 
 @dataclass
@@ -15,7 +16,7 @@ class DedupRecord:
     content_hash: str
 
 
-class DeduplicationEngine:
+class ScanDeduplicator:
     """Thread-safe sliding time-window deduplication engine.
 
     Prevents double-typing when BinaryEye forwards identical barcodes simultaneously
@@ -28,7 +29,6 @@ class DeduplicationEngine:
         self.enabled = enabled
 
         # Cache mapping key -> DedupRecord
-        # Keys can be content hashes or scanId strings
         self._cache: dict[str, DedupRecord] = {}
 
         # Running statistics
@@ -42,10 +42,26 @@ class DeduplicationEngine:
             self.enabled = enabled
 
     @staticmethod
-    def hash_content(content: str) -> str:
+    def normalize_content(content: str) -> str:
+        """Extract canonical normalized barcode text, tolerating URL encoding and CRLF delimiters."""
+        if not content:
+            return ""
+        # Strip trailing/leading CRLF, tabs, spaces
+        cleaned = content.strip("\r\n\t ")
+        if "%" in cleaned:
+            try:
+                unquoted = urllib.parse.unquote_plus(cleaned)
+                if unquoted:
+                    cleaned = unquoted.strip("\r\n\t ")
+            except Exception:
+                pass
+        return cleaned
+
+    @classmethod
+    def hash_content(cls, content: str) -> str:
         """Compute SHA-256 digest of normalized barcode text."""
-        normalized = content.strip().encode("utf-8")
-        return hashlib.sha256(normalized).hexdigest()
+        canonical = cls.normalize_content(content)
+        return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
 
     def check_and_record(
         self,
@@ -61,7 +77,8 @@ class DeduplicationEngine:
             If False, the scan is new and was recorded in the cache.
         """
         now = time.monotonic()
-        content_hash = self.hash_content(content)
+        canonical = self.normalize_content(content)
+        content_hash = hashlib.sha256(canonical.encode("utf-8")).hexdigest()
         window_sec = self.window_ms / 1000.0
 
         with self._lock:
@@ -76,14 +93,15 @@ class DeduplicationEngine:
                 del self._cache[k]
 
             # 2. Check by scanId if provided
-            if scan_id:
-                scan_key = f"scanid:{scan_id}"
+            if scan_id and scan_id.strip():
+                clean_scan_id = scan_id.strip()
+                scan_key = f"scanid:{clean_scan_id}"
                 if scan_key in self._cache:
                     prev = self._cache[scan_key]
                     delta_ms = int((now - prev.timestamp) * 1000)
                     self.duplicates_blocked += 1
                     msg = (
-                        f"Ignored duplicate scanId '{scan_id}' via {source} "
+                        f"[Duplicate Suppressed] Ignored duplicate scanId '{clean_scan_id}' via {source} "
                         f"(already processed via {prev.source} {delta_ms}ms ago)"
                     )
                     return True, msg
@@ -95,21 +113,21 @@ class DeduplicationEngine:
                 delta_ms = int((now - prev.timestamp) * 1000)
                 self.duplicates_blocked += 1
                 msg = (
-                    f"Ignored duplicate content via {source} "
+                    f"[Duplicate Suppressed] Ignored duplicate scan via {source} "
                     f"(already processed via {prev.source} {delta_ms}ms ago)"
                 )
                 return True, msg
 
-            # 4. Not duplicate: record in cache
+            # 4. Not duplicate: record in cache atomically
             record = DedupRecord(
                 timestamp=now,
                 source=source,
-                scan_id=scan_id,
+                scan_id=scan_id.strip() if scan_id else None,
                 content_hash=content_hash,
             )
             self._cache[hash_key] = record
-            if scan_id:
-                self._cache[f"scanid:{scan_id}"] = record
+            if scan_id and scan_id.strip():
+                self._cache[f"scanid:{scan_id.strip()}"] = record
 
             return False, f"Accepted from {source}"
 
@@ -128,3 +146,7 @@ class DeduplicationEngine:
                 "duplicates_blocked": self.duplicates_blocked,
                 "active_entries": len(self._cache),
             }
+
+
+# Backward-compatible alias
+DeduplicationEngine = ScanDeduplicator

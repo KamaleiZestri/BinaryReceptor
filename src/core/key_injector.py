@@ -318,11 +318,14 @@ class KeyInjector:
         if copy_to_clipboard and not self.dry_run:
             win32_set_clipboard_text(content)
 
-        if output_mode == "copy_only":
+        if output_mode in ("copy_only", "clipboard_only"):
             if not self.dry_run:
                 win32_set_clipboard_text(content)
             else:
                 self.recorded_events.append(("copy_only", content))
+            return
+
+        if output_mode in ("log_only", "none", "disabled"):
             return
 
         if pre_typing_delay_ms > 0:
@@ -334,7 +337,7 @@ class KeyInjector:
             self.execute_actions(prefix_actions, inter_key_delay_ms)
 
         # 2. Type/Paste Content
-        if output_mode == "paste":
+        if output_mode in ("paste", "clipboard_paste"):
             self.paste_via_clipboard(content, restore_clipboard=restore_clipboard)
         else:
             self.type_unicode_string(content, inter_key_delay_ms)
