@@ -10,7 +10,7 @@ import tkinter as tk
 from datetime import datetime
 from pathlib import Path
 from tkinter import messagebox, ttk
-from threading import Thread
+from threading import Event, Thread
 
 from .config import Config, ConfigManager, VERSION
 from .dedupe import Deduplicator
@@ -38,6 +38,7 @@ class App:
         self.server = None
         self.dedup = Deduplicator(self.config.dedup_window_ms)
         self.events: queue.Queue[tuple[str, dict[str, str], str]] = queue.Queue()
+        self.ui_actions: queue.Queue[tuple[str, object, Event | None]] = queue.Queue()
         self.count = 0
         self.mode = tk.StringVar(value=self.config.mode)
         self.lang = tk.StringVar(value=self.config.language)
@@ -86,7 +87,7 @@ class App:
         dash = ttk.Frame(self.tabs, padding=16); typing = ttk.Frame(self.tabs, padding=16); network = ttk.Frame(self.tabs, padding=16); log = ttk.Frame(self.tabs, padding=12)
         self.tabs.add(dash, text="Dashboard"); self.tabs.add(typing, text="Prefix / Suffix"); self.tabs.add(network, text="Network & Settings"); self.tabs.add(log, text="Live Scan Log")
         ttk.Label(dash, text="Ready to receive scans", font=("Segoe UI", 16, "bold")).pack(anchor="w", pady=(0, 6))
-        ttk.Label(dash, text="Select HTTP forwarding in BinaryEye, then use the URL above. HTTP and HTTPS are available only as documented by the selected client mode.", style="Muted.TLabel", wraplength=760).pack(anchor="w")
+        ttk.Label(dash, text="Select HTTP forwarding in BinaryEye, then use the URL above. BinaryEye also supports HTTPS callbacks, while this receiver currently serves HTTP only.", style="Muted.TLabel", wraplength=760).pack(anchor="w")
         self.qr_label = ttk.Label(dash); self.qr_label.pack(anchor="center", pady=18)
         self._make_qr()
         self.scan_count = tk.StringVar(value="Scans received: 0")
@@ -208,8 +209,10 @@ class App:
     def stop(self) -> None:
         server, self.server = self.server, None
         if server:
-            Thread(target=server.shutdown, name="binaryreceptor-stop", daemon=True).start()
-            server.server_close()
+            def shutdown() -> None:
+                server.shutdown()
+                server.server_close()
+            Thread(target=shutdown, name="binaryreceptor-stop", daemon=True).start()
         self.status.set("Stopped")
 
     def scan(self, content: str, meta: dict[str, str], source: str) -> None:
@@ -220,6 +223,15 @@ class App:
             while True:
                 content, meta, source = self.events.get_nowait()
                 self._handle_scan(content, meta, source)
+        except queue.Empty: pass
+        try:
+            while True:
+                action, value, completed = self.ui_actions.get_nowait()
+                if action == "clipboard":
+                    self._copy(str(value))
+                    if completed: completed.set()
+                elif action == "error":
+                    messagebox.showerror("Keyboard output", str(value))
         except queue.Empty: pass
         self.root.after(80, self._poll_events)
 
@@ -237,28 +249,34 @@ class App:
             try: content = re.sub(self.config.replace_pattern, self.config.replace_with, content)
             except re.error: pass
         self.last_scan = content
-        Thread(target=self._output_scan, args=(content,), name="binaryreceptor-output", daemon=True).start()
+        Thread(target=self._output_scan, args=(content, self.config), name="binaryreceptor-output", daemon=True).start()
         self.count += 1; self.scan_count.set(f"Scans received: {self.count}")
         self._add_history(content, meta, source, {"type": "Typed", "paste": "Pasted", "copy": "Copied", "log": "Logged"}.get(self.config.output_mode, "Typed"))
         if self.config.log_file:
-            try:
-                with Path(self.config.log_file).open("a", newline="", encoding="utf-8") as f:
-                    writer = csv.writer(f); writer.writerow([datetime.now().isoformat(timespec="seconds"), content, fmt, source])
-            except OSError: pass
+            Thread(target=self._write_log, args=(self.config.log_file, content, fmt, source), daemon=True).start()
 
-    def _output_scan(self, content: str) -> None:
+    @staticmethod
+    def _write_log(path: str, content: str, fmt: str, source: str) -> None:
         try:
-            if self.config.initial_delay_ms: import time; time.sleep(self.config.initial_delay_ms / 1000)
-            if self.config.output_mode == "type":
-                type_template(self.config.prefix); type_template(content, self.config.typing_delay_ms); type_template(self.config.suffix)
-            elif self.config.output_mode == "paste":
-                self.root.after(0, lambda: self._clipboard_paste(content))
-            elif self.config.output_mode == "copy": self.root.after(0, lambda: self._copy(content))
-        except Exception as exc:
-            self.root.after(0, lambda error=exc: messagebox.showerror("Keyboard output", str(error)))
+            with Path(path).open("a", newline="", encoding="utf-8") as f:
+                csv.writer(f).writerow([datetime.now().isoformat(timespec="seconds"), content, fmt, source])
+        except OSError: pass
 
-    def _clipboard_paste(self, value: str) -> None:
-        self._copy(value); type_token("ctrl+v")
+    def _output_scan(self, content: str, config: Config) -> None:
+        try:
+            if config.initial_delay_ms: import time; time.sleep(config.initial_delay_ms / 1000)
+            if config.output_mode == "type":
+                type_template(config.prefix); type_template(content, config.typing_delay_ms); type_template(config.suffix)
+            elif config.output_mode == "paste":
+                type_template(config.prefix)
+                completed = Event()
+                self.ui_actions.put(("clipboard", content, completed))
+                if not completed.wait(5): raise RuntimeError("Clipboard update timed out")
+                type_token("ctrl+v")
+                type_template(config.suffix)
+            elif config.output_mode == "copy": self.ui_actions.put(("clipboard", content, None))
+        except Exception as exc:
+            self.ui_actions.put(("error", str(exc), None))
 
     def _copy(self, value: str) -> None:
         self.root.clipboard_clear(); self.root.clipboard_append(value)

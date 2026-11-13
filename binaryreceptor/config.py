@@ -15,7 +15,7 @@ DEFAULTS: dict[str, str] = {
     "output_mode": "type", "typing_delay_ms": "0", "initial_delay_ms": "0",
     "trim_whitespace": "false", "transform": "none", "symbology": "all",
     "replace_pattern": "", "replace_with": "", "log_file": "", "minimize_to_tray": "false",
-    "auto_start": "false", "theme": "system", "https": "false",
+    "auto_start": "false", "theme": "system",
 }
 
 def config_path() -> Path:
@@ -46,7 +46,6 @@ class Config:
     minimize_to_tray: bool = False
     auto_start: bool = False
     theme: str = "system"
-    https: bool = False
 
 class ConfigManager:
     def __init__(self, path: Path | None = None) -> None:
@@ -123,7 +122,6 @@ class ConfigManager:
                 replace_pattern=raw.get("replace_pattern", ""), replace_with=raw.get("replace_with", ""),
                 log_file=raw.get("log_file", "").strip(), minimize_to_tray=boolean("minimize_to_tray", False),
                 auto_start=boolean("auto_start", False), theme=choice("theme", {"system", "light", "dark"}, "system"),
-                https=boolean("https", False),
             )
             self._config = Config(**values)
             self._mtime_ns = self.path.stat().st_mtime_ns if self.path.exists() else None

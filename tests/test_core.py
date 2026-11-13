@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import tempfile
+import time
 import unittest
 from threading import Event
 from pathlib import Path
@@ -20,6 +21,7 @@ class ConfigTests(unittest.TestCase):
             manager = ConfigManager(path)
             self.assertEqual((manager.current.mode, manager.current.port), ("http", 8080))
             self.assertIn("dedup_window_ms = 1500", path.read_text(encoding="utf-8"))
+            time.sleep(0.02)
             path.write_text("[app]\nmode = both\nport = 8181\n", encoding="utf-8")
             self.assertEqual((manager.reload_if_changed().mode, manager.current.port), ("both", 8181))
 
